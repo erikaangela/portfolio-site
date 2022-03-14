@@ -805,7 +805,7 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+:is(.portfolio-details, .portfolio-details-2) {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -815,51 +815,51 @@ section .container {
   bottom: 0;
   overflow-y: auto;
 }
-.portfolio-details .container {
+:is(.portfolio-details, .portfolio-details-2) .container {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.portfolio-details .portfolio-title {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-info {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-info {
   padding-top: 45px;
 }
-.portfolio-details .portfolio-info h3 {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-info ul {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.portfolio-details .portfolio-info ul li + li {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-info ul li + li {
   margin-top: 10px;
 }
-.portfolio-details .portfolio-info p {
+:is(.portfolio-details, .portfolio-details-2) .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
+  :is(.portfolio-details, .portfolio-details-2) .portfolio-info {
     padding-top: 20px;
   }
 }
-.portfolio-details .swiper-pagination {
+:is(.portfolio-details, .portfolio-details-2) .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+:is(.portfolio-details, .portfolio-details-2) .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+:is(.portfolio-details, .portfolio-details-2) .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #B4DFE5;
 }
 
