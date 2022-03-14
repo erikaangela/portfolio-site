@@ -805,7 +805,7 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-:is(.portfolio-details, .portfolio-details-2) {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -815,51 +815,51 @@ section .container {
   bottom: 0;
   overflow-y: auto;
 }
-:is(.portfolio-details, .portfolio-details-2) .container {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .container {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-title {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-info {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info {
   padding-top: 45px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-info h3 {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-info ul {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-info ul li + li {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info ul li + li {
   margin-top: 10px;
 }
-:is(.portfolio-details, .portfolio-details-2) .portfolio-info p {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 @media (max-width: 992px) {
-  :is(.portfolio-details, .portfolio-details-2) .portfolio-info {
+  :is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .portfolio-info {
     padding-top: 20px;
   }
 }
-:is(.portfolio-details, .portfolio-details-2) .swiper-pagination {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-:is(.portfolio-details, .portfolio-details-2) .swiper-pagination .swiper-pagination-bullet {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
-:is(.portfolio-details, .portfolio-details-2) .swiper-pagination .swiper-pagination-bullet-active {
+:is(.portfolio-details, .portfolio-details-2, .portfolio-details-3, .portfolio-details-4, .portfolio-details-5) .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #B4DFE5;
 }
 
