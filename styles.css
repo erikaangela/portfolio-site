@@ -10,17 +10,17 @@ footer {
 }
 
 img {
-  /* padding-bottom: 12px;
-  border: 5px dotted; */
+  padding-bottom: 12px;
+  border: 5px dotted;
 
-  border: 0.5rem outset pink;
+  /* border: 0.5rem outset pink;
   outline: 0.5rem solid khaki;
   box-shadow: 0 0 0 2rem skyblue;
   border-radius: 12px;
   font: bold 1rem sans-serif;
   margin: 2rem;
   padding: 1rem;
-  outline-offset: 0.5rem;
+  outline-offset: 0.5rem; */
 }
 
 @media only screen and (max-width: 992px) {
