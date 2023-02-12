@@ -6,6 +6,10 @@
   background: $theme;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 header {
   @include centerFull();
   @include theme();
