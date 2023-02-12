@@ -1,3 +1,20 @@
-#home {
-  background: lightblue;
+@mixin centerFull() {
+  height: 100vh;
+}
+
+@mixin theme($theme: #f4eee0) {
+  background: $theme;
+}
+
+header {
+  @include centerFull();
+  @include theme();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  @include centerFull();
+  @include theme();
 }
