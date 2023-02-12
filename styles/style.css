@@ -13,4 +13,6 @@ header {
 footer {
   height: 100vh;
   background: #f4eee0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* added padding for fixed nav, 100vh for responsiveness, font size, font style, image borders*//*# sourceMappingURL=style.css.map */
