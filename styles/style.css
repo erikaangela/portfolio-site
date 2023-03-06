@@ -1,18 +1,4 @@
-html {
-  font-size: 62.5%;
-}
-
-header {
-  height: 100vh;
-  background: #f4eee0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  height: 100vh;
-  background: #f4eee0;
-}
-
-/* added padding for fixed nav, 100vh for responsiveness, font size, font style, image borders*//*# sourceMappingURL=style.css.map */
+*, *::after, ::after, *::before {
+  font-family: "Oswald", sans-serif;
+  font-family: "Tilt Warp", cursive;
+}/*# sourceMappingURL=style.css.map */
