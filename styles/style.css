@@ -3,7 +3,8 @@
   font-family: "Tilt Warp", cursive;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* For ease in setting padding */
+  scroll-behavior: smooth;
 }
 nav {
   background-color: black;
@@ -12,6 +13,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  /* Make nav sticky */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav .nav-branding {
   font-size: 2rem;
@@ -26,7 +31,7 @@ nav .nav-link {
   transition: 0.7s ease;
 }
 nav .nav-link:hover {
-  color: dodgerblue;
+  color: navy;
 }
 nav a {
   color: white;
@@ -48,18 +53,27 @@ nav .hamburger .bar {
   background-color: white;
 }
 
+.intro {
+  margin: 3rem;
+}
+
+.skills {
+  margin: 3rem;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
+  margin: 3rem;
 }
 
 .card {
   background-color: white;
-  border: 1px solid black;
   border-radius: 0.25rem;
   overflow: hidden;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 .card .card-header {
   font-size: 1.5rem;
@@ -74,7 +88,8 @@ nav .hamburger .bar {
 .card .card-image > img {
   display: block;
   width: 100%;
-  max-height: 200px;
+  max-height: 200px; /* avoids img becoming too wide */
+  /* maintains a 16x9 img of any size, avoids loss of quality */
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
