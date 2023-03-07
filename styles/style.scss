@@ -1,11 +1,68 @@
 * {
   font-family: "Oswald", sans-serif;
   font-family: "Tilt Warp", cursive;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
   &::before {
     @extend *;
   }
   &::after {
     @extend *;
+  }
+}
+
+nav {
+  background-color: black;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+
+  .nav-branding {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+
+    &:hover {
+      color: dodgerblue;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+    }
   }
 }
 
@@ -80,6 +137,48 @@
         .btn {
           margin-left: 0.25rem;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    .hamburger {
+      display: block;
+
+      &.active {
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .nav-item {
+      margin: 16px 0;
+    }
+
+    .nav-menu {
+      &.active {
+        left: 0;
       }
     }
   }

@@ -1,7 +1,53 @@
 *, *::after, ::after, *::before {
   font-family: "Oswald", sans-serif;
   font-family: "Tilt Warp", cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+nav {
+  background-color: black;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+nav .nav-branding {
+  font-size: 2rem;
+}
+nav .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-link {
+  transition: 0.7s ease;
+}
+nav .nav-link:hover {
+  color: dodgerblue;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav li {
+  list-style: none;
+}
+nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+nav .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -61,4 +107,36 @@
 }
 .card .card-footer .btn + .btn {
   margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  nav .hamburger {
+    display: block;
+  }
+  nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  nav .nav-item {
+    margin: 16px 0;
+  }
+  nav .nav-menu.active {
+    left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
