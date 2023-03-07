@@ -18,21 +18,49 @@
 
 .card {
   background-color: white;
-  padding: 1rem;
+  // padding: 1rem;
   border: 1px solid black;
   border-radius: 0.25rem;
+  overflow: hidden;
 
   .card-header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .card-image {
+    overflow: hidden;
+    padding: 0;
+
+    > {
+      img {
+        display: block;
+        width: 100%;
+        max-height: 200px; // avoids img becoming too wide
+        // maintains a 16x9 img of any size, avoids loss of quality
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
+
+        &:hover {
+          transform: scale(1.025);
+          transition: 200ms transform ease-in-out;
+        }
+      }
+    }
   }
 
   .card-body {
     font-size: 0.9rem;
+    padding: 0 1rem;
   }
 
   .card-footer {
     margin-top: 0.5rem;
+    padding: 1rem;
+    padding-top: 0;
 
     .btn {
       background: hsl(350, 100%, 88%);
