@@ -53,17 +53,22 @@ nav .hamburger .bar {
   background-color: white;
 }
 
-.intro {
+header {
   margin: 3rem;
   margin-top: 5rem; /* Accomodate for fixed nav */
 }
 
 .skills {
   margin: 3rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.contact {
-  margin: 3rem;
+.skills .technologies {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .btn {
@@ -128,6 +133,10 @@ nav .hamburger .bar {
   margin-top: 0.5rem;
   padding: 1rem;
   padding-top: 0;
+}
+
+.contact {
+  margin: 3rem;
 }
 
 @media (max-width: 768px) {
