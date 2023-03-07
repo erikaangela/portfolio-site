@@ -55,10 +55,30 @@ nav .hamburger .bar {
 
 .intro {
   margin: 3rem;
+  margin-top: 5rem; /* Accomodate for fixed nav */
 }
 
 .skills {
   margin: 3rem;
+}
+
+.contact {
+  margin: 3rem;
+}
+
+.btn {
+  background: hsl(350, 100%, 88%);
+  color: white;
+  border: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background: hsl(350, 100%, 98%);
+}
+.btn + .btn {
+  margin-left: 0.25rem;
 }
 
 .card-grid {
@@ -108,20 +128,6 @@ nav .hamburger .bar {
   margin-top: 0.5rem;
   padding: 1rem;
   padding-top: 0;
-}
-.card .card-footer .btn, .card .card-footer .btn:hover, .card .card-footer .btn:focus {
-  background: hsl(350, 100%, 88%);
-  color: white;
-  border: none;
-  padding: 0.5em 0.75em;
-  border-radius: 0.25em;
-  cursor: pointer;
-}
-.card .card-footer .btn:hover, .card .card-footer .btn:focus {
-  background: hsl(350, 100%, 98%);
-}
-.card .card-footer .btn + .btn {
-  margin-left: 0.25rem;
 }
 
 @media (max-width: 768px) {

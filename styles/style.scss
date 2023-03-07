@@ -26,6 +26,26 @@ $clr-btn--lt: hsl(350, 100%, 88% + 10%);
   }
 }
 
+@mixin btn-style {
+  background: $clr-btn;
+  color: $clr-primary;
+  border: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: $clr-btn--lt;
+  }
+
+  + {
+    .btn {
+      margin-left: 0.25rem;
+    }
+  }
+}
+
 nav {
   background-color: $clr-accent;
   min-height: 70px;
@@ -84,10 +104,19 @@ nav {
 
 .intro {
   margin: $section-margin;
+  margin-top: $section-margin + 2rem; /* Accomodate for fixed nav */
 }
 
 .skills {
   margin: $section-margin;
+}
+
+.contact {
+  margin: $section-margin;
+}
+
+.btn {
+  @include btn-style();
 }
 
 .card-grid {
@@ -142,27 +171,6 @@ nav {
     margin-top: 0.5rem;
     padding: 1rem;
     padding-top: 0;
-
-    .btn {
-      background: $clr-btn;
-      color: $clr-primary;
-      border: none;
-      padding: 0.5em 0.75em;
-      border-radius: 0.25em;
-      cursor: pointer;
-
-      &:hover,
-      &:focus {
-        @extend .btn;
-        background: $clr-btn--lt;
-      }
-
-      + {
-        .btn {
-          margin-left: 0.25rem;
-        }
-      }
-    }
   }
 }
 
