@@ -1,6 +1,9 @@
-*, *::after, ::after, *::before {
+html {
   font-family: "Oswald", sans-serif;
   font-family: "Tilt Warp", cursive;
+}
+
+*, *::after, ::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box; /* For ease in setting padding */
@@ -65,10 +68,18 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.skills .technologies {
-  display: flex;
+.skills .skills-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.skills .skills-grid {
+  display: grid;
   width: 100%;
-  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+  gap: 1rem;
+  margin: 3rem;
 }
 
 .btn {

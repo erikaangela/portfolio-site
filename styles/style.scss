@@ -1,8 +1,22 @@
-@import "_base.scss";
+$ff-primary: "Oswald", sans-serif;
+$ff-secondary: "Tilt Warp", cursive;
+$section-margin: 3rem;
+$box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+$clr-primary: white;
+$clr-secondary: navy;
+$clr-accent: black;
+$clr-btn: hsl(350, 100%, 88%);
+$clr-btn--lt: hsl(350, 100%, 88% + 10%);
 
-* {
+html {
   font-family: $ff-primary;
   font-family: $ff-secondary;
+}
+
+* {
+  // font-family: $ff-primary;
+  // font-family: $ff-secondary;
 
   padding: 0;
   margin: 0;
@@ -105,10 +119,19 @@ header {
   flex-direction: column;
   align-items: center;
 
-  .technologies {
-    display: flex;
+  .skills-header {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .skills-grid {
+    display: grid;
     width: 100%;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    gap: 1rem;
+    margin: $section-margin;
   }
 }
 
