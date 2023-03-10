@@ -12,7 +12,7 @@ body,
   scroll-behavior: smooth;
 }
 .btn, .contact-section .btn {
-  background: hsl(350, 100%, 88%);
+  background: hsl(177, 78%, 27%);
   color: white;
   border: none;
   padding: 0.5em 0.75em;
@@ -20,7 +20,7 @@ body,
   cursor: pointer;
 }
 .btn:hover, .btn:focus {
-  background: hsl(350, 100%, 98%);
+  background: hsl(177, 78%, 37%);
 }
 .btn + .btn {
   margin-left: 0.25rem;
@@ -85,6 +85,10 @@ nav .hamburger .bar {
   margin: 4rem;
   text-align: center;
 }
+.about-section .body {
+  margin: 4rem;
+  margin-top: 2rem;
+}
 
 .skills-section {
   margin: 4rem;
@@ -102,6 +106,7 @@ nav .hamburger .bar {
   grid-template-columns: repeat(6, 40px);
   gap: 3.5rem;
   margin: 4rem;
+  margin-top: 2rem;
 }
 .skills-section .skills-grid .skill {
   place-self: center;
@@ -193,10 +198,11 @@ nav .hamburger .bar {
   padding-bottom: 0;
 }
 .contact-section .contact-flex {
-  margin: 4rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin: 4rem;
+  margin-top: 2rem;
 }
 .contact-section .btn {
   padding: 1em 5em;
@@ -243,7 +249,7 @@ nav .hamburger .bar {
     gap: 3.5rem;
   }
   .contact-section .btn {
-    background: hsl(350, 100%, 88%);
+    background: hsl(177, 78%, 27%);
     color: white;
     border: none;
     padding: 0.5em 0.75em;
@@ -252,7 +258,7 @@ nav .hamburger .bar {
     padding: 1em 1em;
   }
   .contact-section .btn:hover, .contact-section .btn:focus {
-    background: hsl(350, 100%, 98%);
+    background: hsl(177, 78%, 37%);
   }
   .contact-section .btn + .btn {
     margin-left: 0.25rem;
