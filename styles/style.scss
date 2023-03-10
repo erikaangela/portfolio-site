@@ -9,9 +9,9 @@ $clr-accent: black;
 $clr-btn: hsl(350, 100%, 88%);
 $clr-btn--lt: hsl(350, 100%, 88% + 10%);
 
-html {
-  font-family: $ff-primary;
-  font-family: $ff-secondary;
+body {
+  font-family: $ff-primary !important;
+  font-family: $ff-secondary !important;
 }
 
 * {
@@ -114,10 +114,7 @@ header {
 
 .skills {
   margin: $section-margin;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 
   .skills-header {
     font-size: 1.5rem;
@@ -128,10 +125,13 @@ header {
 
   .skills-grid {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
-    gap: 1rem;
-    margin: $section-margin;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 40px);
+    gap: 3.5rem;
+
+    .skill {
+      place-self: center;
+    }
   }
 }
 
