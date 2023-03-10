@@ -1,4 +1,5 @@
-body {
+body,
+.btn {
   font-family: "Oswald", sans-serif !important;
   font-family: "Tilt Warp", cursive !important;
 }
@@ -9,6 +10,22 @@ body {
   box-sizing: border-box; /* For ease in setting padding */
   scroll-behavior: smooth;
 }
+.btn {
+  background: hsl(350, 100%, 88%);
+  color: white;
+  border: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background: hsl(350, 100%, 98%);
+}
+.btn + .btn {
+  margin-left: 0.25rem;
+}
+
+/* Navigation */
 nav {
   background-color: black;
   min-height: 70px;
@@ -56,71 +73,75 @@ nav .hamburger .bar {
   background-color: white;
 }
 
-header {
+/* Intro Section */
+.intro-section {
   margin: 3rem;
   margin-top: 5rem; /* Accomodate for fixed nav */
 }
 
-.skills {
+/* About Me and Skills Section */
+.skills-section {
   margin: 3rem;
   text-align: center;
 }
-.skills .skills-header {
+.skills-section .header {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   padding: 1rem;
   padding-bottom: 0;
 }
-.skills .skills-grid {
+.skills-section .skills-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 40px);
+  grid-template-columns: repeat(6, 40px);
   gap: 3.5rem;
+  margin: 3rem;
 }
-.skills .skills-grid .skill {
+.skills-section .skills-grid .skill {
   place-self: center;
 }
 
-.btn {
-  background: hsl(350, 100%, 88%);
-  color: white;
-  border: none;
-  padding: 0.5em 0.75em;
-  border-radius: 0.25em;
-  cursor: pointer;
+/* Projects Section */
+.projects-section {
+  margin: 3rem;
+  text-align: center;
 }
-.btn:hover, .btn:focus {
-  background: hsl(350, 100%, 98%);
+.projects-section .header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
 }
-.btn + .btn {
-  margin-left: 0.25rem;
-}
-
-.card-grid {
+.projects-section .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
   margin: 3rem;
 }
-
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  overflow: hidden;
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-}
-.card .card-header {
+.projects-section .header {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   padding: 1rem;
   padding-bottom: 0;
 }
-.card .card-image {
+.projects-section .card {
+  background-color: white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+.projects-section .card .card-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.projects-section .card .card-image {
   overflow: hidden;
   padding: 0;
 }
-.card .card-image > img {
+.projects-section .card .card-image > img {
   display: block;
   width: 100%;
   max-height: 200px; /* avoids img becoming too wide */
@@ -131,25 +152,41 @@ header {
   -o-object-position: center;
      object-position: center;
 }
-.card .card-image > img:hover {
+.projects-section .card .card-image > img:hover {
   transform: scale(1.025);
   transition: 200ms transform ease-in-out;
 }
-.card .card-body {
+.projects-section .card .card-body {
   font-size: 0.9rem;
   padding: 0 1rem;
 }
-.card .card-footer {
+.projects-section .card .card-footer {
   margin-top: 0.5rem;
   padding: 1rem;
   padding-top: 0;
 }
 
-.contact {
+/* Contact Section */
+.contact-section {
   margin: 3rem;
+  text-align: center;
+}
+.contact-section .header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.contact-section .contact-flex {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
+  /* Navigation */
   nav .hamburger {
     display: block;
   }
@@ -178,5 +215,13 @@ header {
   }
   nav .nav-menu.active {
     left: 0;
+  }
+  /* Skills Section */
+  .skills-section .skills-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(2, 40px);
+    gap: 3.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

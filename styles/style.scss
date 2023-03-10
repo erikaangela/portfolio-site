@@ -9,15 +9,13 @@ $clr-accent: black;
 $clr-btn: hsl(350, 100%, 88%);
 $clr-btn--lt: hsl(350, 100%, 88% + 10%);
 
-body {
+body,
+.btn {
   font-family: $ff-primary !important;
   font-family: $ff-secondary !important;
 }
 
 * {
-  // font-family: $ff-primary;
-  // font-family: $ff-secondary;
-
   padding: 0;
   margin: 0;
   box-sizing: border-box; /* For ease in setting padding */
@@ -50,6 +48,24 @@ body {
     }
   }
 }
+
+@mixin section-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+@mixin section-align {
+  margin: $section-margin;
+  text-align: center;
+}
+
+.btn {
+  @include btn-style();
+}
+
+/* Navigation */
 
 nav {
   background-color: $clr-accent;
@@ -107,16 +123,19 @@ nav {
   }
 }
 
-header {
+/* Intro Section */
+
+.intro-section {
   margin: $section-margin;
   margin-top: $section-margin + 2rem; /* Accomodate for fixed nav */
 }
 
-.skills {
-  margin: $section-margin;
-  text-align: center;
+/* About Me and Skills Section */
 
-  .skills-header {
+.skills-section {
+  @include section-align();
+
+  .header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     padding: 1rem;
@@ -126,8 +145,9 @@ header {
   .skills-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 40px);
+    grid-template-columns: repeat(6, 40px);
     gap: 3.5rem;
+    margin: $section-margin;
 
     .skill {
       place-self: center;
@@ -135,70 +155,95 @@ header {
   }
 }
 
-.btn {
-  @include btn-style();
-}
+/* Projects Section */
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  align-items: flex-start;
-  margin: $section-margin;
-}
+.projects-section {
+  @include section-align();
 
-.card {
-  background-color: $clr-primary;
-  border-radius: 0.25rem;
-  overflow: hidden;
-  box-shadow: $box-shadow;
-
-  .card-header {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-    padding-bottom: 0;
+  .header {
+    @include section-header();
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin: $section-margin;
   }
 
-  .card-image {
+  .header {
+    @include section-header();
+  }
+
+  .card {
+    background-color: $clr-primary;
+    border-radius: 0.25rem;
     overflow: hidden;
-    padding: 0;
+    box-shadow: $box-shadow;
 
-    > {
-      img {
-        display: block;
-        width: 100%;
-        max-height: 200px; /* avoids img becoming too wide */
-        /* maintains a 16x9 img of any size, avoids loss of quality */
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-        object-position: center;
+    .card-header {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      padding-bottom: 0;
+    }
 
-        &:hover {
-          transform: scale(1.025);
-          transition: 200ms transform ease-in-out;
+    .card-image {
+      overflow: hidden;
+      padding: 0;
+
+      > {
+        img {
+          display: block;
+          width: 100%;
+          max-height: 200px; /* avoids img becoming too wide */
+          /* maintains a 16x9 img of any size, avoids loss of quality */
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+          object-position: center;
+
+          &:hover {
+            transform: scale(1.025);
+            transition: 200ms transform ease-in-out;
+          }
         }
       }
     }
-  }
 
-  .card-body {
-    font-size: 0.9rem;
-    padding: 0 1rem;
-  }
+    .card-body {
+      font-size: 0.9rem;
+      padding: 0 1rem;
+    }
 
-  .card-footer {
-    margin-top: 0.5rem;
-    padding: 1rem;
-    padding-top: 0;
+    .card-footer {
+      margin-top: 0.5rem;
+      padding: 1rem;
+      padding-top: 0;
+    }
   }
 }
 
-.contact {
-  margin: $section-margin;
+/* Contact Section */
+
+.contact-section {
+  @include section-align();
+  .header {
+    @include section-header();
+  }
+
+  .contact-flex {
+    margin: $section-margin;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
+
+/* Media Queries */
 
 @media (max-width: 768px) {
+  /* Navigation */
+
   nav {
     .hamburger {
       display: block;
@@ -236,6 +281,18 @@ header {
       &.active {
         left: 0;
       }
+    }
+  }
+
+  /* Skills Section */
+
+  .skills-section {
+    .skills-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows: repeat(2, 40px);
+      gap: 3.5rem;
     }
   }
 }
