@@ -1,5 +1,6 @@
 body,
-.btn {
+.btn,
+.contact-section .btn {
   font-family: "Oswald", sans-serif !important;
   font-family: "Tilt Warp", cursive !important;
 }
@@ -10,7 +11,7 @@ body,
   box-sizing: border-box; /* For ease in setting padding */
   scroll-behavior: smooth;
 }
-.btn {
+.btn, .contact-section .btn {
   background: hsl(350, 100%, 88%);
   color: white;
   border: none;
@@ -75,13 +76,13 @@ nav .hamburger .bar {
 
 /* Intro Section */
 .intro-section {
-  margin: 3rem;
-  margin-top: 5rem; /* Accomodate for fixed nav */
+  margin: 4rem;
+  margin-top: 6rem; /* Accomodate for fixed nav */
 }
 
 /* About Me and Skills Section */
 .skills-section {
-  margin: 3rem;
+  margin: 4rem;
   text-align: center;
 }
 .skills-section .header {
@@ -95,7 +96,7 @@ nav .hamburger .bar {
   justify-content: center;
   grid-template-columns: repeat(6, 40px);
   gap: 3.5rem;
-  margin: 3rem;
+  margin: 4rem;
 }
 .skills-section .skills-grid .skill {
   place-self: center;
@@ -103,7 +104,7 @@ nav .hamburger .bar {
 
 /* Projects Section */
 .projects-section {
-  margin: 3rem;
+  margin: 4rem;
   text-align: center;
 }
 .projects-section .header {
@@ -116,8 +117,9 @@ nav .hamburger .bar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+  justify-content: center;
   align-items: flex-start;
-  margin: 3rem;
+  margin: 4rem;
 }
 .projects-section .header {
   font-size: 1.5rem;
@@ -160,6 +162,14 @@ nav .hamburger .bar {
   font-size: 0.9rem;
   padding: 0 1rem;
 }
+.projects-section .card .card-body .technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
 .projects-section .card .card-footer {
   margin-top: 0.5rem;
   padding: 1rem;
@@ -168,7 +178,7 @@ nav .hamburger .bar {
 
 /* Contact Section */
 .contact-section {
-  margin: 3rem;
+  margin: 4rem;
   text-align: center;
 }
 .contact-section .header {
@@ -178,10 +188,13 @@ nav .hamburger .bar {
   padding-bottom: 0;
 }
 .contact-section .contact-flex {
-  margin: 3rem;
+  margin: 4rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+.contact-section .btn {
+  padding: 1em 5em;
 }
 
 /* Media Queries */
@@ -223,5 +236,20 @@ nav .hamburger .bar {
     grid-template-columns: repeat(3, 40px);
     grid-template-rows: repeat(2, 40px);
     gap: 3.5rem;
+  }
+  .contact-section .btn {
+    background: hsl(350, 100%, 88%);
+    color: white;
+    border: none;
+    padding: 0.5em 0.75em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    padding: 1em 1em;
+  }
+  .contact-section .btn:hover, .contact-section .btn:focus {
+    background: hsl(350, 100%, 98%);
+  }
+  .contact-section .btn + .btn {
+    margin-left: 0.25rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 $ff-primary: "Oswald", sans-serif;
 $ff-secondary: "Tilt Warp", cursive;
-$section-margin: 3rem;
+$section-margin: 4rem;
 $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 $clr-primary: white;
@@ -29,6 +29,18 @@ body,
   }
 }
 
+@mixin section-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+@mixin section-align {
+  margin: $section-margin;
+  text-align: center;
+}
+
 @mixin btn-style {
   background: $clr-btn;
   color: $clr-primary;
@@ -47,18 +59,6 @@ body,
       margin-left: 0.25rem;
     }
   }
-}
-
-@mixin section-header {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  padding-bottom: 0;
-}
-
-@mixin section-align {
-  margin: $section-margin;
-  text-align: center;
 }
 
 .btn {
@@ -167,6 +167,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    justify-content: center;
     align-items: flex-start;
     margin: $section-margin;
   }
@@ -213,6 +214,15 @@ nav {
     .card-body {
       font-size: 0.9rem;
       padding: 0 1rem;
+
+      .technologies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
+      }
     }
 
     .card-footer {
@@ -227,6 +237,7 @@ nav {
 
 .contact-section {
   @include section-align();
+
   .header {
     @include section-header();
   }
@@ -236,6 +247,11 @@ nav {
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .btn {
+    @extend .btn;
+    padding: 1em 5em;
   }
 }
 
@@ -293,6 +309,13 @@ nav {
       grid-template-columns: repeat(3, 40px);
       grid-template-rows: repeat(2, 40px);
       gap: 3.5rem;
+    }
+  }
+
+  .contact-section {
+    .btn {
+      @include btn-style();
+      padding: 1em 1em;
     }
   }
 }
