@@ -1,6 +1,6 @@
 $ff-primary: "Oswald", sans-serif;
 $ff-secondary: "Tilt Warp", cursive;
-$section-margin: 4rem;
+$section-margin: 6rem;
 $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 $clr-primary: white;
@@ -8,6 +8,22 @@ $clr-secondary: navy;
 $clr-accent: black;
 $clr-btn: hsl(177, 78%, 27%);
 $clr-btn--lt: hsl(177, 78%, 27% + 10%);
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem !important;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25em;
+}
 
 body,
 .btn {
@@ -48,6 +64,7 @@ body,
   padding: 0.5em 3em;
   border-radius: 0.5em;
   cursor: pointer;
+  font-size: 1em;
 
   &:hover,
   &:focus {
