@@ -81,6 +81,11 @@ nav .hamburger .bar {
 }
 
 /* About Me and Skills Section */
+.about-section {
+  margin: 4rem;
+  text-align: center;
+}
+
 .skills-section {
   margin: 4rem;
   text-align: center;

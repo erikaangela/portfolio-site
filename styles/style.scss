@@ -132,6 +132,10 @@ nav {
 
 /* About Me and Skills Section */
 
+.about-section {
+  @include section-align();
+}
+
 .skills-section {
   @include section-align();
 
