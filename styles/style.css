@@ -15,8 +15,8 @@ body,
   background: hsl(177, 78%, 27%);
   color: white;
   border: none;
-  padding: 0.5em 0.75em;
-  border-radius: 0.25em;
+  padding: 0.5em 3em;
+  border-radius: 0.5em;
   cursor: pointer;
 }
 .btn:hover, .btn:focus {
@@ -252,8 +252,8 @@ nav .hamburger .bar {
     background: hsl(177, 78%, 27%);
     color: white;
     border: none;
-    padding: 0.5em 0.75em;
-    border-radius: 0.25em;
+    padding: 0.5em 3em;
+    border-radius: 0.5em;
     cursor: pointer;
     padding: 1em 1em;
   }
