@@ -143,7 +143,7 @@ nav .hamburger .bar {
 .projects-section .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 2.5rem;
   justify-content: center;
   align-items: flex-start;
   margin: 6rem;
@@ -196,6 +196,11 @@ nav .hamburger .bar {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0.5rem 0;
+}
+.projects-section .card .card-body .technologies .technology {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
 }
 .projects-section .card .card-footer {
   margin-top: 0.5rem;
