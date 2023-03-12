@@ -1,5 +1,5 @@
-$ff-primary: "Oswald", sans-serif;
-$ff-secondary: "Tilt Warp", cursive;
+// $ff-primary: "Oswald", sans-serif;
+// $ff-secondary: "Tilt Warp", cursive;
 $section-margin: 6rem;
 $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -17,8 +17,12 @@ $btn-size: 0.9em;
 
 body,
 .btn {
-  font-family: $ff-primary !important;
-  font-family: $ff-secondary !important;
+  // font-family: $ff-primary !important;
+  // font-family: $ff-secondary !important;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-se;
 }
 
 * {
@@ -287,6 +291,16 @@ nav {
     @extend .btn;
     padding: 1em 5em;
   }
+
+  .body {
+    padding: 4rem 0 8rem 0;
+  }
+}
+
+.creator {
+  margin: auto 0 0.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 /* Media Queries */
