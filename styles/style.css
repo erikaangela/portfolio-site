@@ -18,7 +18,7 @@ body,
   padding: 0.5em 3em;
   border-radius: 3em;
   cursor: pointer;
-  font-size: 1.15em;
+  font-size: 0.9em;
   text-decoration: none;
 }
 .btn:hover, .btn:focus {
@@ -191,6 +191,7 @@ nav .hamburger .bar {
   margin: 0.5rem 0;
 }
 .projects-section .card-grid .card .card-body .technologies .technology {
+  font-size: 0.9em;
   background-color: black;
   color: white;
   padding: 0.5em 1em;
@@ -199,7 +200,7 @@ nav .hamburger .bar {
 }
 .projects-section .card-grid .card .card-footer {
   margin-top: 0.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   padding-top: 0;
 }
 
@@ -272,7 +273,7 @@ nav .hamburger .bar {
     padding: 0.5em 3em;
     border-radius: 3em;
     cursor: pointer;
-    font-size: 1.15em;
+    font-size: 0.9em;
     text-decoration: none;
     padding: 1em 1em;
   }
