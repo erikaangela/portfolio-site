@@ -270,6 +270,7 @@ nav {
     }
   }
 }
+
 /* Contact Section */
 
 .contact-section {
@@ -287,6 +288,23 @@ nav {
     margin-top: 2rem;
   }
 
+  .contact-links {
+    .link {
+      display: flex;
+      flex-direction: column;
+
+      .btn {
+        @extend .btn;
+        border-radius: 50%;
+      }
+
+      .title {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
   .btn {
     @extend .btn;
     padding: 1em 5em;
@@ -296,6 +314,8 @@ nav {
     padding: 4rem 0 8rem 0;
   }
 }
+
+/* Site End */
 
 .creator {
   margin: auto 0 0.5rem 0;
@@ -360,7 +380,18 @@ nav {
     }
   }
 
+  /* Contact Section */
+
   .contact-section {
+    // .contact-flex {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   gap: 1rem;
+    //   margin: $section-margin;
+    //   margin-top: 2rem;
+    // }
+
     .btn {
       @include btn-style();
       padding: 1em 1em;

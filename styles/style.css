@@ -1,6 +1,7 @@
 body,
 .btn,
-.contact-section .btn {
+.contact-section .btn,
+.contact-section .contact-links .link .btn {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-se;
 }
 
@@ -10,7 +11,7 @@ body,
   box-sizing: border-box; /* For ease in setting padding */
   scroll-behavior: smooth;
 }
-.btn, .contact-section .btn {
+.btn, .contact-section .btn, .contact-section .contact-links .link .btn {
   background: hsl(177, 78%, 27%);
   color: white;
   border: none;
@@ -20,10 +21,10 @@ body,
   font-size: 0.9em;
   text-decoration: none;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .contact-section .btn:hover, .contact-section .contact-links .link .btn:hover, .btn:focus, .contact-section .btn:focus, .contact-section .contact-links .link .btn:focus {
   background: hsl(177, 78%, 37%);
 }
-.btn + .btn {
+.btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .contact-links .link .btn + .btn {
   margin-left: 0.25rem;
 }
 
@@ -221,13 +222,25 @@ nav .hamburger .bar {
   margin: 6rem;
   margin-top: 2rem;
 }
-.contact-section .btn {
+.contact-section .contact-links .link {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-links .link .btn {
+  border-radius: 50%;
+}
+.contact-section .contact-links .link .title {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.contact-section .btn, .contact-section .btn, .contact-section .contact-links .link .btn {
   padding: 1em 5em;
 }
 .contact-section .body {
   padding: 4rem 0 8rem 0;
 }
 
+/* Site End */
 .creator {
   margin: auto 0 0.5rem 0;
   text-align: center;
@@ -274,7 +287,8 @@ nav .hamburger .bar {
     grid-template-rows: repeat(2, 40px);
     gap: 3.5rem;
   }
-  .contact-section .btn {
+  /* Contact Section */
+  .contact-section .btn, .contact-section .contact-links .link .btn, .contact-section .btn {
     background: hsl(177, 78%, 27%);
     color: white;
     border: none;
@@ -285,10 +299,10 @@ nav .hamburger .bar {
     text-decoration: none;
     padding: 1em 1em;
   }
-  .contact-section .btn:hover, .contact-section .btn:focus {
+  .contact-section .btn:hover, .contact-section .contact-links .link .btn:hover, .contact-section .btn:hover, .contact-section .btn:focus, .contact-section .contact-links .link .btn:focus, .contact-section .btn:focus {
     background: hsl(177, 78%, 37%);
   }
-  .contact-section .btn + .btn {
+  .contact-section .btn + .btn, .contact-section .contact-links .link .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn {
     margin-left: 0.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
