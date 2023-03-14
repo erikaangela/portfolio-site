@@ -307,6 +307,9 @@ nav .hamburger .bar {
     align-items: flex-start;
     margin: 2rem;
   }
+  .projects-section .card-grid .card .card-body .technologies .technology {
+    font-size: 0.65em;
+  }
   /* Skills Section */
   .skills-section .skills-grid {
     display: grid;

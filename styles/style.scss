@@ -399,6 +399,16 @@ nav {
       justify-content: center;
       align-items: flex-start;
       margin: 2rem;
+
+      .card {
+        .card-body {
+          .technologies {
+            .technology {
+              font-size: 0.65em;
+            }
+          }
+        }
+      }
     }
   }
 
