@@ -197,6 +197,7 @@ nav {
 
   .header {
     @include section-header();
+    margin-bottom: 2.5rem;
   }
   .card-grid {
     display: grid;
@@ -204,7 +205,6 @@ nav {
     gap: 2.5rem;
     justify-content: center;
     align-items: flex-start;
-    margin: $section-margin;
 
     .card {
       background-color: $clr-primary;
