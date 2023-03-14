@@ -61,6 +61,8 @@ body,
   cursor: pointer;
   font-size: $btn-size;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 
   &:hover,
   &:focus {
@@ -399,6 +401,10 @@ nav {
       justify-content: center;
       align-items: flex-start;
       margin: 2rem;
+
+      .btn {
+        padding: 0.5em 2em;
+      }
 
       .card {
         .card-body {

@@ -19,6 +19,8 @@ body,
   cursor: pointer;
   font-size: 1.1rem;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .btn:hover, .btn:focus {
   background: hsl(235, 25%, 65%);
@@ -306,6 +308,9 @@ nav .hamburger .bar {
     justify-content: center;
     align-items: flex-start;
     margin: 2rem;
+  }
+  .projects-section .card-grid .btn {
+    padding: 0.5em 2em;
   }
   .projects-section .card-grid .card .card-body .technologies .technology {
     font-size: 0.65em;
