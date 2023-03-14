@@ -13,7 +13,7 @@ $h1-size: 4rem;
 $h2-size: 3rem;
 $h3-size: 2rem;
 $p-size: 1.25em;
-$btn-size: 1.1rem;
+$btn-size: 1.1em;
 $technology-size: 0.75em;
 
 body,
@@ -200,7 +200,7 @@ nav {
   }
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2.5rem;
     justify-content: center;
     align-items: flex-start;
@@ -403,7 +403,7 @@ nav {
       margin: 2rem;
 
       .btn {
-        padding: 0.5em 2em;
+        padding: 0.5em 1.75em;
       }
 
       .card {
