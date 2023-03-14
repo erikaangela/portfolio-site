@@ -222,30 +222,31 @@
           <p><span class="pseudo-link">Read on my code updates</span></p>
         </div>
       </div>
-    </footer>
 
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <input style="display: none" name="bot-field" />
-      <p>
-        <label for="name">Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label for="email">Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label for="message"
-          >Message: <textarea name="message"></textarea>
-        </label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/success/"
+      >
+        <input style="display: none" name="bot-field" />
+        <p>
+          <label for="name">Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label for="email">Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label for="message"
+            >Message: <textarea name="message"></textarea>
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </footer>
 
     <footer class="creator">Erika Manalastas 2023</footer>
 
