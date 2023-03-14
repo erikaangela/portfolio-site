@@ -6,14 +6,15 @@ $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
 $clr-primary: white;
 $clr-secondary: navy;
 $clr-accent: black;
-$clr-btn: hsl(177, 78%, 27%);
-$clr-btn--lt: hsl(177, 78%, 27% + 10%);
+$clr-btn: hsl(235, 25%, 55%);
+$clr-btn--lt: hsl(235, 25%, 55% + 10%);
 
 $h1-size: 4rem;
 $h2-size: 3rem;
 $h3-size: 2rem;
 $p-size: 1.25em;
-$btn-size: 0.9em;
+$btn-size: 1.1rem;
+$technology-size: 0.75em;
 
 body,
 .btn {
@@ -252,7 +253,7 @@ nav {
           margin: 0.5rem 0;
 
           .technology {
-            font-size: $btn-size;
+            font-size: $technology-size;
             background-color: black;
             color: white;
             padding: 0.5em 1em;
@@ -280,6 +281,15 @@ nav {
     @include section-header();
   }
 
+  .btn {
+    @extend .btn;
+    padding: 1em 1.2em;
+  }
+
+  .body {
+    padding: 4rem 0 8rem 0;
+  }
+
   .contact-flex {
     display: flex;
     flex-direction: column;
@@ -293,10 +303,6 @@ nav {
   .contact-links {
     display: flex;
     gap: 2rem;
-
-    .btn {
-      padding: 1em 1.2em;
-    }
   }
 
   .contact-form {
@@ -330,15 +336,6 @@ nav {
         box-shadow: $box-shadow;
       }
     }
-  }
-
-  .btn {
-    @extend .btn;
-    padding: 1em 5em;
-  }
-
-  .body {
-    padding: 4rem 0 8rem 0;
   }
 }
 

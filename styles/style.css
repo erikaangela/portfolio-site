@@ -11,17 +11,17 @@ body,
   scroll-behavior: smooth;
 }
 .btn, .contact-section .btn {
-  background: hsl(177, 78%, 27%);
+  background: hsl(235, 25%, 55%);
   color: white;
   border: none;
   padding: 0.5em 3em;
   border-radius: 3em;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .btn:hover, .btn:focus {
-  background: hsl(177, 78%, 37%);
+  background: hsl(235, 25%, 65%);
 }
 .btn + .btn {
   margin-left: 0.25rem;
@@ -190,7 +190,7 @@ nav .hamburger .bar {
   margin: 0.5rem 0;
 }
 .projects-section .card-grid .card .card-body .technologies .technology {
-  font-size: 0.9em;
+  font-size: 0.75em;
   background-color: black;
   color: white;
   padding: 0.5em 1em;
@@ -214,6 +214,12 @@ nav .hamburger .bar {
   padding: 1rem;
   padding-bottom: 0;
 }
+.contact-section .btn {
+  padding: 1em 1.2em;
+}
+.contact-section .body {
+  padding: 4rem 0 8rem 0;
+}
 .contact-section .contact-flex {
   display: flex;
   flex-direction: column;
@@ -226,9 +232,6 @@ nav .hamburger .bar {
 .contact-section .contact-links {
   display: flex;
   gap: 2rem;
-}
-.contact-section .contact-links .btn {
-  padding: 1em 1.2em;
 }
 .contact-section .contact-form {
   display: flex;
@@ -255,12 +258,6 @@ nav .hamburger .bar {
   border: 0;
   border-radius: 0.5rem;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-}
-.contact-section .btn {
-  padding: 1em 5em;
-}
-.contact-section .body {
-  padding: 4rem 0 8rem 0;
 }
 
 /* Site End */
@@ -321,18 +318,18 @@ nav .hamburger .bar {
     margin-top: 2rem;
   }
   .contact-section .btn {
-    background: hsl(177, 78%, 27%);
+    background: hsl(235, 25%, 55%);
     color: white;
     border: none;
     padding: 0.5em 3em;
     border-radius: 3em;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1.1rem;
     text-decoration: none;
     padding: 1em 1em;
   }
   .contact-section .btn:hover, .contact-section .btn:focus {
-    background: hsl(177, 78%, 37%);
+    background: hsl(235, 25%, 65%);
   }
   .contact-section .btn + .btn {
     margin-left: 0.25rem;
