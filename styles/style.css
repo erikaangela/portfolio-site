@@ -226,7 +226,6 @@ nav .hamburger .bar {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  margin: 4.5rem;
   margin-top: 2rem;
 }
 .contact-section .contact-links {
@@ -317,7 +316,10 @@ nav .hamburger .bar {
     gap: 3.5rem;
   }
   /* Contact Section */
-  .contact-form .form-item {
+  .contact-section .contact-flex .contact-links {
+    gap: 0.75rem;
+  }
+  .contact-section .form-item {
     max-width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
