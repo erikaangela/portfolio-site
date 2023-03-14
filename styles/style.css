@@ -43,13 +43,15 @@ nav {
   width: 100%;
 }
 nav .nav-branding {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  letter-spacing: 3px;
 }
 nav .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  font-size: 1.75rem;
 }
 nav .nav-link {
   transition: 0.7s ease;

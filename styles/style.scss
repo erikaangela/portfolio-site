@@ -13,6 +13,7 @@ $h1-size: 4rem;
 $h2-size: 3rem;
 $h3-size: 2rem;
 $p-size: 1.25em;
+$nav-size: 1.75rem;
 $btn-size: 1.1em;
 $technology-size: 0.75em;
 
@@ -95,7 +96,8 @@ nav {
   width: 100%;
 
   .nav-branding {
-    font-size: 2rem;
+    font-size: $nav-size;
+    letter-spacing: 3px;
   }
 
   .nav-menu {
@@ -103,6 +105,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    font-size: $nav-size;
   }
 
   .nav-link {
