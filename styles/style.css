@@ -1,7 +1,6 @@
 body,
 .btn,
-.contact-section .btn,
-.contact-section .contact-links .link .btn {
+.contact-section .btn {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-se;
 }
 
@@ -11,7 +10,7 @@ body,
   box-sizing: border-box; /* For ease in setting padding */
   scroll-behavior: smooth;
 }
-.btn, .contact-section .btn, .contact-section .contact-links .link .btn {
+.btn, .contact-section .btn {
   background: hsl(177, 78%, 27%);
   color: white;
   border: none;
@@ -21,10 +20,10 @@ body,
   font-size: 0.9em;
   text-decoration: none;
 }
-.btn:hover, .contact-section .btn:hover, .contact-section .contact-links .link .btn:hover, .btn:focus, .contact-section .btn:focus, .contact-section .contact-links .link .btn:focus {
+.btn:hover, .btn:focus {
   background: hsl(177, 78%, 37%);
 }
-.btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .contact-links .link .btn + .btn {
+.btn + .btn {
   margin-left: 0.25rem;
 }
 
@@ -217,23 +216,47 @@ nav .hamburger .bar {
 }
 .contact-section .contact-flex {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 2.5rem;
   margin: 6rem;
   margin-top: 2rem;
 }
-.contact-section .contact-links .link {
+.contact-section .contact-links {
+  display: flex;
+  gap: 2rem;
+}
+.contact-section .contact-links .btn {
+  padding: 1em 1.2em;
+}
+.contact-section .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-section .contact-form input[name=bot-field] {
+  display: none;
+}
+.contact-section .contact-form label,
+.contact-section .contact-form .form-input {
+  font-family: inherit;
+  font-weight: 650;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.contact-section .contact-form .form-item {
   display: flex;
   flex-direction: column;
 }
-.contact-section .contact-links .link .btn {
-  border-radius: 50%;
+.contact-section .contact-form .form-item .form-input {
+  margin-top: 0.5rem;
+  padding: 0.5em;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
-.contact-section .contact-links .link .title {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.contact-section .btn, .contact-section .btn, .contact-section .contact-links .link .btn {
+.contact-section .btn {
   padding: 1em 5em;
 }
 .contact-section .body {
@@ -288,7 +311,16 @@ nav .hamburger .bar {
     gap: 3.5rem;
   }
   /* Contact Section */
-  .contact-section .btn, .contact-section .contact-links .link .btn, .contact-section .btn {
+  .contact-section .contact-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 6rem;
+    margin-top: 2rem;
+  }
+  .contact-section .btn {
     background: hsl(177, 78%, 27%);
     color: white;
     border: none;
@@ -299,10 +331,10 @@ nav .hamburger .bar {
     text-decoration: none;
     padding: 1em 1em;
   }
-  .contact-section .btn:hover, .contact-section .contact-links .link .btn:hover, .contact-section .btn:hover, .contact-section .btn:focus, .contact-section .contact-links .link .btn:focus, .contact-section .btn:focus {
+  .contact-section .btn:hover, .contact-section .btn:focus {
     background: hsl(177, 78%, 37%);
   }
-  .contact-section .btn + .btn, .contact-section .contact-links .link .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn, .contact-section .btn + .btn {
+  .contact-section .btn + .btn {
     margin-left: 0.25rem;
   }
 }/*# sourceMappingURL=style.css.map */

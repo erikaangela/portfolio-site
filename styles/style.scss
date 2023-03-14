@@ -282,25 +282,52 @@ nav {
 
   .contact-flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2.5rem;
     margin: $section-margin;
     margin-top: 2rem;
   }
 
   .contact-links {
-    .link {
+    display: flex;
+    gap: 2rem;
+
+    .btn {
+      padding: 1em 1.2em;
+    }
+  }
+
+  .contact-form {
+    // max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    input[name="bot-field"] {
+      display: none;
+    }
+
+    label,
+    .form-input {
+      font-family: inherit;
+      font-weight: 650;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .form-item {
       display: flex;
       flex-direction: column;
 
-      .btn {
-        @extend .btn;
-        border-radius: 50%;
-      }
-
-      .title {
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+      .form-input {
+        margin-top: 0.5rem;
+        padding: 0.5em;
+        border: 0;
+        border-radius: 0.5rem;
+        box-shadow: $box-shadow;
       }
     }
   }
@@ -383,14 +410,15 @@ nav {
   /* Contact Section */
 
   .contact-section {
-    // .contact-flex {
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: center;
-    //   gap: 1rem;
-    //   margin: $section-margin;
-    //   margin-top: 2rem;
-    // }
+    .contact-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: $section-margin;
+      margin-top: 2rem;
+    }
 
     .btn {
       @include btn-style();

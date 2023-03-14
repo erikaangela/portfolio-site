@@ -182,13 +182,9 @@
 
     <footer id="contact" class="contact-section">
       <h2 class="header">Contact</h2>
-      <div class="body contact-links contact-flex">
-        <div class="link">
+      <div class="contact-flex">
+        <div class="contact-links">
           <a class="btn"><i class="fa-regular fa-envelope"></i></a>
-          <h4 class="title">Email</h4>
-          <p><span class="pseudo-link">mana.erikaa@gmail.com</span></p>
-        </div>
-        <div class="link">
           <a
             class="btn"
             target="_blank"
@@ -196,10 +192,6 @@
             href="https://www.linkedin.com/in/erika-manalastas/"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
-          <h4 class="title">LinkedIn</h4>
-          <p><span class="pseudo-link">Connect with me</span></p>
-        </div>
-        <div class="link">
           <a
             class="btn"
             target="_blank"
@@ -207,10 +199,6 @@
             href="https://github.com/erikaangela"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <h4 class="title">GitHub</h4>
-          <p><span class="pseudo-link">Follow my code</span></p>
-        </div>
-        <div class="link">
           <a
             class="btn"
             target="_blank"
@@ -218,34 +206,38 @@
             href="https://medium.com/@erikaangela4"
             ><i class="fa-brands fa-medium"></i
           ></a>
-          <h4 class="title">Medium</h4>
-          <p><span class="pseudo-link">Read on my code updates</span></p>
         </div>
-      </div>
 
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        action="/success/"
-      >
-        <input style="display: none" name="bot-field" />
-        <p>
-          <label for="name">Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label for="email">Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label for="message"
-            >Message: <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/success/"
+        >
+          <input name="bot-field" />
+          <div class="form-item">
+            <label for="name">Name</label>
+            <input class="form-input" type="text" name="name" />
+          </div>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input class="form-input" type="email" name="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea
+              class="form-input"
+              name="message"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
     </footer>
 
     <footer class="creator">Erika Manalastas 2023</footer>
