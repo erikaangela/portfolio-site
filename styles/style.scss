@@ -166,9 +166,18 @@ nav {
   }
 
   .body {
-    // margin: $section-margin;
     margin-top: 2rem;
-    font-size: $p-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .bio {
+      padding: 0 4em;
+      font-size: $p-size;
+      line-height: 2.2rem;
+    }
   }
 }
 
@@ -421,7 +430,17 @@ nav {
     }
   }
 
-  /* Skills Section */
+  /* About Me and Skills Section */
+
+  .about-section {
+    margin: 0;
+
+    .body {
+      .bio {
+        padding: 0 1.5em;
+      }
+    }
+  }
 
   .skills-section {
     .skills-grid {

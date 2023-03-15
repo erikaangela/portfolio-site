@@ -105,7 +105,16 @@ nav .hamburger .bar {
 }
 .about-section .body {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.about-section .body .bio {
+  padding: 0 4em;
   font-size: 1.25em;
+  line-height: 2.2rem;
 }
 
 .skills-section {
@@ -317,7 +326,13 @@ nav .hamburger .bar {
   .projects-section .card-grid .card .card-body .technologies .technology {
     font-size: 0.65em;
   }
-  /* Skills Section */
+  /* About Me and Skills Section */
+  .about-section {
+    margin: 0;
+  }
+  .about-section .body .bio {
+    padding: 0 1.5em;
+  }
   .skills-section .skills-grid {
     display: grid;
     justify-content: center;
