@@ -159,7 +159,7 @@ nav {
     font-size: $h3-size;
   }
 
-  .profile {
+  .profile-image {
     width: 50%;
     clip-path: circle(34%);
     z-index: -1;
@@ -224,7 +224,7 @@ nav {
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2.5rem;
+    gap: 2rem;
     justify-content: center;
     align-items: flex-start;
 
@@ -413,6 +413,40 @@ nav {
     }
   }
 
+  /* Intro Section */
+
+  .intro-section {
+    flex-direction: column;
+
+    .profile-image {
+      width: 100%;
+      clip-path: circle(34%);
+      z-index: -1;
+    }
+  }
+
+  /* About Me and Skills Section */
+
+  .about-section {
+    margin: 0;
+
+    .body {
+      .bio {
+        padding: 0 1.5em;
+      }
+    }
+  }
+
+  .skills-section {
+    .skills-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows: repeat(2, 40px);
+      gap: 3.5rem;
+    }
+  }
+
   /* Projects Section */
 
   .projects-section {
@@ -437,28 +471,6 @@ nav {
           }
         }
       }
-    }
-  }
-
-  /* About Me and Skills Section */
-
-  .about-section {
-    margin: 0;
-
-    .body {
-      .bio {
-        padding: 0 1.5em;
-      }
-    }
-  }
-
-  .skills-section {
-    .skills-grid {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(3, 40px);
-      grid-template-rows: repeat(2, 40px);
-      gap: 3.5rem;
     }
   }
 

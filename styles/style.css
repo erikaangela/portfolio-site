@@ -95,7 +95,7 @@ nav .hamburger .bar {
 .intro-section .subtitle {
   font-size: 2rem;
 }
-.intro-section .profile {
+.intro-section .profile-image {
   width: 50%;
   -webkit-clip-path: circle(34%);
           clip-path: circle(34%);
@@ -164,7 +164,7 @@ nav .hamburger .bar {
 .projects-section .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: center;
   align-items: flex-start;
 }
@@ -321,20 +321,15 @@ nav .hamburger .bar {
   nav .nav-menu.active {
     left: 0;
   }
-  /* Projects Section */
-  .projects-section .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 2rem;
+  /* Intro Section */
+  .intro-section {
+    flex-direction: column;
   }
-  .projects-section .card-grid .btn {
-    padding: 0.5em 1.75em;
-  }
-  .projects-section .card-grid .card .card-body .technologies .technology {
-    font-size: 0.65em;
+  .intro-section .profile-image {
+    width: 100%;
+    -webkit-clip-path: circle(34%);
+            clip-path: circle(34%);
+    z-index: -1;
   }
   /* About Me and Skills Section */
   .about-section {
@@ -349,6 +344,21 @@ nav .hamburger .bar {
     grid-template-columns: repeat(3, 40px);
     grid-template-rows: repeat(2, 40px);
     gap: 3.5rem;
+  }
+  /* Projects Section */
+  .projects-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+  }
+  .projects-section .card-grid .btn {
+    padding: 0.5em 1.75em;
+  }
+  .projects-section .card-grid .card .card-body .technologies .technology {
+    font-size: 0.65em;
   }
   /* Contact Section */
   .contact-section .contact-flex .contact-links {
