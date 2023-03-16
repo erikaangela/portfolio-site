@@ -118,7 +118,7 @@ nav .hamburger .bar {
 position is relative to .diagonal's relative position, which keeps it in the flow */
   z-index: -1;
   inset: 0; /* Shorthand for top bottom left right */
-  transform: skewY(-5deg);
+  transform: skewY(-5.5deg);
 }
 
 .about-section {
