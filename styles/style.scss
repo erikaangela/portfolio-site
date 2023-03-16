@@ -3,13 +3,12 @@
 $section-margin: 4.5rem;
 $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-$clr-primary: white;
-$clr-secondary: navy;
-$clr-accent: black;
-$clr-btn: hsl(235, 25%, 55%);
-$clr-btn--lt: hsl(235, 25%, 55% + 10%);
+$clr-primary: hsl(50, 18%, 93%);
+$clr-accent: hsl(218, 45%, 15%);
+$clr-btn: hsl(224, 33%, 75%);
+$clr-btn--lt: hsl(224, 33%, 75% + 10%);
 
-$h1-size: 4rem;
+$h1-size: 3.75rem;
 $h2-size: 3rem;
 $h3-size: 2rem;
 $p-size: 1.25em;
@@ -25,6 +24,8 @@ body,
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-se;
+
+  background-color: $clr-primary;
 }
 
 * {
@@ -112,7 +113,7 @@ nav {
     transition: 0.7s ease;
 
     &:hover {
-      color: $clr-secondary;
+      color: $clr-primary;
     }
   }
 
