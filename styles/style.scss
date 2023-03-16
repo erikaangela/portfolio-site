@@ -146,6 +146,7 @@ nav {
 .intro-section {
   @include section-align();
   margin-top: $section-margin + 2rem; /* Accomodate for fixed nav */
+  height: 100vh;
 
   .title {
     font-size: $h1-size;

@@ -84,6 +84,7 @@ nav .hamburger .bar {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
+  height: 100vh;
 }
 .intro-section .title {
   font-size: 4rem;
