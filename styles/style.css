@@ -84,13 +84,22 @@ nav .hamburger .bar {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
 .intro-section .title {
   font-size: 4rem;
 }
 .intro-section .subtitle {
   font-size: 2rem;
+}
+.intro-section .profile {
+  width: 50%;
+  -webkit-clip-path: circle(34%);
+          clip-path: circle(34%);
+  z-index: -1;
 }
 
 /* About Me and Skills Section */
