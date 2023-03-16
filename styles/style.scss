@@ -170,6 +170,25 @@ nav {
 
 /* About Me and Skills Section */
 
+.info {
+  position: relative;
+  isolation: isolate;
+  padding-block: 1rem;
+}
+
+.info::after {
+  content: "";
+  background: linear-gradient(
+    hsl(224, 33%, 88%),
+    hsl(224, 33%, 81.5%),
+    hsl(224, 33%, 75%)
+  );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+}
+
 .about-section {
   @include section-align();
 
