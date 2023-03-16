@@ -59,7 +59,7 @@ body,
   color: $clr-primary;
   border: none;
   padding: 0.5em 3em;
-  border-radius: 3em;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: $btn-size;
   text-decoration: none;
@@ -283,6 +283,7 @@ nav {
             background-color: black;
             color: white;
             padding: 0.5em 1em;
+            border-radius: 3em;
             text-transform: uppercase;
             letter-spacing: 0.1em;
           }
@@ -309,6 +310,7 @@ nav {
 
   .btn {
     @extend .btn;
+    border-radius: 3em;
     padding: 1em 1.2em;
   }
 
