@@ -108,7 +108,7 @@ nav .hamburger .bar {
 .info {
   position: relative;
   isolation: isolate;
-  padding-block: 1rem;
+  padding-block: 1rem 2.5rem;
 }
 
 .info::after {
