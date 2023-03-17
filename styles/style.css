@@ -1,3 +1,9 @@
+*, *::after, ::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* For ease in setting padding */
+  scroll-behavior: smooth;
+}
 body,
 .btn,
 .contact-section .btn {
@@ -5,12 +11,6 @@ body,
   background-color: hsl(50, 18%, 93%);
 }
 
-*, *::after, ::after, *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* For ease in setting padding */
-  scroll-behavior: smooth;
-}
 .btn, .contact-section .btn {
   background: hsl(224, 33%, 75%);
   color: hsl(50, 18%, 93%);
@@ -30,7 +30,7 @@ body,
   margin-left: 0.25rem;
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav {
   background-color: hsl(218, 45%, 15%);
   min-height: 70px;
@@ -81,8 +81,8 @@ nav .hamburger .bar {
   background-color: hsl(50, 18%, 93%);
 }
 
-/* Intro Section */
-.intro-section {
+/* HEADER SECTION */
+.header-section {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
@@ -91,20 +91,20 @@ nav .hamburger .bar {
   align-items: center;
   gap: 4rem;
 }
-.intro-section .title {
+.header-section .hero-title {
   font-size: 3.75rem;
 }
-.intro-section .subtitle {
+.header-section .hero-subtitle {
   font-size: 2rem;
 }
-.intro-section .profile-image {
+.header-section .hero-image {
   width: 50%;
   -webkit-clip-path: circle(34%);
           clip-path: circle(34%);
   z-index: -1;
 }
 
-/* About Me and Skills Section */
+/* ABOUT ME AND SKILLS SECTION */
 .diagonal {
   position: relative;
   isolation: isolate; /* Keeps z-index of ::after contained within .diagonal in case of future bg */
@@ -167,7 +167,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   place-self: center;
 }
 
-/* Projects Section */
+/* PROJECTS SECTION */
 .projects-section {
   margin: 4.5rem;
   text-align: center;
@@ -245,7 +245,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   padding-top: 0;
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
 .contact-section {
   margin: 4.5rem;
   text-align: center;
@@ -302,14 +302,14 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-/* Site End */
+/* SITE END */
 .creator {
   margin: auto 0 0.5rem 0;
   text-align: center;
   font-size: 0.8rem;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   /* Navigation */
   nav .hamburger {
@@ -341,17 +341,17 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   nav .nav-menu.active {
     left: 0;
   }
-  /* Intro Section */
-  .intro-section {
+  /* HEADER SECTION */
+  .header-section {
     flex-direction: column;
   }
-  .intro-section .profile-image {
+  .header-section .hero-image {
     width: 100%;
     -webkit-clip-path: circle(34%);
             clip-path: circle(34%);
     z-index: -1;
   }
-  /* About Me and Skills Section */
+  /* ABOUT ME AND SKILLS SECTION */
   .about-section {
     margin: 0;
   }
@@ -365,7 +365,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
     grid-template-rows: repeat(2, 40px);
     gap: 3.5rem;
   }
-  /* Projects Section */
+  /* PROJECTS SECTION */
   .projects-section .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -380,7 +380,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   .projects-section .card-grid .card .card-body .technologies .technology {
     font-size: 0.65em;
   }
-  /* Contact Section */
+  /* CONTACT SECTION */
   .contact-section .contact-flex .contact-links {
     gap: 0.75rem;
   }

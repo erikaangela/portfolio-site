@@ -1,12 +1,14 @@
 // $ff-primary: "Oswald", sans-serif;
 // $ff-secondary: "Tilt Warp", cursive;
+
 $section-margin: 4.5rem;
 $box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
 $clr-primary: hsl(50, 18%, 93%);
-$clr-accent: hsl(218, 45%, 15%);
-$clr-btn: hsl(224, 33%, 75%);
-$clr-btn--lt: hsl(224, 33%, 75% + 10%);
+$clr-secondary: hsl(218, 45%, 15%);
+$clr-accent: hsl(224, 33%, 75%);
+$clr-accent--lt: hsl(224, 33%, 75% + 10%);
 
 $h1-size: 3.75rem;
 $h2-size: 3rem;
@@ -16,13 +18,16 @@ $nav-size: 1.75rem;
 $btn-size: 1.1em;
 $technology-size: 0.75em;
 
-body,
-.btn {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-se;
+@mixin section-header {
+  font-size: $h2-size;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
 
-  background-color: $clr-primary;
+@mixin section-align {
+  margin: $section-margin;
+  text-align: center;
 }
 
 * {
@@ -39,20 +44,17 @@ body,
   }
 }
 
-@mixin section-header {
-  font-size: $h2-size;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  padding-bottom: 0;
+body,
+.btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-se;
+
+  background-color: $clr-primary;
 }
 
-@mixin section-align {
-  margin: $section-margin;
-  text-align: center;
-}
-
-@mixin btn-style {
-  background: $clr-btn;
+.btn {
+  background: $clr-accent;
   color: $clr-primary;
   border: none;
   padding: 0.5em 3em;
@@ -65,7 +67,7 @@ body,
 
   &:hover,
   &:focus {
-    background: $clr-btn--lt;
+    background: $clr-accent--lt;
   }
 
   + {
@@ -75,19 +77,16 @@ body,
   }
 }
 
-.btn {
-  @include btn-style();
-}
-
-/* Navigation */
+/* NAVIGATION */
 
 nav {
-  background-color: $clr-accent;
+  background-color: $clr-secondary;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+
   /* Make nav sticky */
   position: fixed;
   top: 0;
@@ -140,9 +139,9 @@ nav {
   }
 }
 
-/* Intro Section */
+/* HEADER SECTION */
 
-.intro-section {
+.header-section {
   @include section-align();
   margin-top: $section-margin + 2rem; /* Accomodate for fixed nav */
   display: flex;
@@ -150,22 +149,22 @@ nav {
   align-items: center;
   gap: 4rem;
 
-  .title {
+  .hero-title {
     font-size: $h1-size;
   }
 
-  .subtitle {
+  .hero-subtitle {
     font-size: $h3-size;
   }
 
-  .profile-image {
+  .hero-image {
     width: 50%;
     clip-path: circle(34%);
     z-index: -1;
   }
 }
 
-/* About Me and Skills Section */
+/* ABOUT ME AND SKILLS SECTION */
 
 .diagonal {
   position: relative;
@@ -231,7 +230,7 @@ nav {
   }
 }
 
-/* Projects Section */
+/* PROJECTS SECTION */
 
 .projects-section {
   @include section-align();
@@ -316,7 +315,7 @@ nav {
   }
 }
 
-/* Contact Section */
+/* CONTACT SECTION */
 
 .contact-section {
   @include section-align();
@@ -381,7 +380,7 @@ nav {
   }
 }
 
-/* Site End */
+/* SITE END */
 
 .creator {
   margin: auto 0 0.5rem 0;
@@ -389,7 +388,7 @@ nav {
   font-size: 0.8rem;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 
 @media (max-width: 768px) {
   /* Navigation */
@@ -417,7 +416,7 @@ nav {
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: $clr-accent;
+      background-color: $clr-secondary;
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -434,19 +433,19 @@ nav {
     }
   }
 
-  /* Intro Section */
+  /* HEADER SECTION */
 
-  .intro-section {
+  .header-section {
     flex-direction: column;
 
-    .profile-image {
+    .hero-image {
       width: 100%;
       clip-path: circle(34%);
       z-index: -1;
     }
   }
 
-  /* About Me and Skills Section */
+  /* ABOUT ME AND SKILLS SECTION */
 
   .about-section {
     margin: 0;
@@ -468,7 +467,7 @@ nav {
     }
   }
 
-  /* Projects Section */
+  /* PROJECTS SECTION */
 
   .projects-section {
     .card-grid {
@@ -495,7 +494,7 @@ nav {
     }
   }
 
-  /* Contact Section */
+  /* CONTACT SECTION */
 
   .contact-section {
     .contact-flex {
