@@ -130,9 +130,8 @@ nav .hamburger .bar {
 }
 .header-section .hero-image {
   width: 50%;
-  -webkit-clip-path: circle(34%);
-          clip-path: circle(34%);
-  z-index: -1;
+  border: 3px solid hsl(96, 18%, 74%);
+  box-shadow: 6px 6px hsl(96, 18%, 74%);
 }
 @media (max-width: 768px) {
   .header-section {

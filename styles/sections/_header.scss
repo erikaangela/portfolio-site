@@ -18,8 +18,10 @@
 
   .hero-image {
     width: 50%;
-    clip-path: circle(34%);
-    z-index: -1;
+    border: 3px solid hsl(96, 18%, 74%);
+    box-shadow: 6px 6px hsl(96, 18%, 74%);
+    // clip-path: circle(34%);
+    // z-index: -1;
   }
 
   @media (max-width: 768px) {
