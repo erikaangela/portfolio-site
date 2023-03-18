@@ -1,86 +1,13 @@
-// $ff-primary: "Oswald", sans-serif;
-// $ff-secondary: "Tilt Warp", cursive;
+@use "./abstracts";
 
-$section-margin: 4.5rem;
-$box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+@use "./base/reset";
 
-$clr-primary: hsl(50, 18%, 93%);
-$clr-secondary: hsl(218, 45%, 15%);
-$clr-accent: hsl(224, 33%, 75%);
-$clr-accent--lt: hsl(224, 33%, 75% + 10%);
-
-$h1-size: 3.75rem;
-$h2-size: 3rem;
-$h3-size: 2rem;
-$p-size: 1.25em;
-$nav-size: 1.75rem;
-$btn-size: 1.1em;
-$technology-size: 0.75em;
-
-@mixin section-header {
-  font-size: $h2-size;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  padding-bottom: 0;
-}
-
-@mixin section-align {
-  margin: $section-margin;
-  text-align: center;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* For ease in setting padding */
-  scroll-behavior: smooth;
-
-  &::before {
-    @extend *;
-  }
-  &::after {
-    @extend *;
-  }
-}
-
-body,
-.btn {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-se;
-
-  background-color: $clr-primary;
-}
-
-.btn {
-  background: $clr-accent;
-  color: $clr-primary;
-  border: none;
-  padding: 0.5em 3em;
-  border-radius: 0.5em;
-  cursor: pointer;
-  font-size: $btn-size;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  &:hover,
-  &:focus {
-    background: $clr-accent--lt;
-  }
-
-  + {
-    .btn {
-      margin-left: 0.25rem;
-    }
-  }
-}
+@use "./components/buttons";
 
 /* NAVIGATION */
 
 nav {
-  background-color: $clr-secondary;
+  background-color: abstracts.$clr-secondary;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -94,7 +21,7 @@ nav {
   z-index: 1;
 
   .nav-branding {
-    font-size: $nav-size;
+    font-size: abstracts.$nav-size;
     letter-spacing: 3px;
   }
 
@@ -103,14 +30,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    font-size: $nav-size;
+    font-size: abstracts.$nav-size;
   }
 
   .nav-link {
     transition: 0.7s ease;
 
     &:hover {
-      color: $clr-primary;
+      color: abstracts.$clr-primary;
     }
   }
 
@@ -134,7 +61,7 @@ nav {
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: $clr-primary;
+      background-color: abstracts.$clr-primary;
     }
   }
 }
@@ -142,19 +69,19 @@ nav {
 /* HEADER SECTION */
 
 .header-section {
-  @include section-align();
-  margin-top: $section-margin + 2rem; /* Accomodate for fixed nav */
+  @include abstracts.section-align();
+  margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
 
   .hero-title {
-    font-size: $h1-size;
+    font-size: abstracts.$h1-size;
   }
 
   .hero-subtitle {
-    font-size: $h3-size;
+    font-size: abstracts.$h3-size;
   }
 
   .hero-image {
@@ -187,10 +114,10 @@ nav {
 }
 
 .about-section {
-  @include section-align();
+  @include abstracts.section-align();
 
   .header {
-    @include section-header();
+    @include abstracts.section-header();
   }
 
   .body {
@@ -203,17 +130,17 @@ nav {
 
     .bio {
       padding: 0 4em;
-      font-size: $p-size;
+      font-size: abstracts.$p-size;
       line-height: 2.2rem;
     }
   }
 }
 
 .skills-section {
-  @include section-align();
+  @include abstracts.section-align();
 
   .header {
-    @include section-header();
+    @include abstracts.section-header();
   }
 
   .skills-grid {
@@ -221,7 +148,7 @@ nav {
     justify-content: center;
     grid-template-columns: repeat(6, 40px);
     gap: 3.5rem;
-    margin: $section-margin;
+    margin: abstracts.$section-margin;
     margin-top: 2rem;
 
     .skill {
@@ -233,10 +160,10 @@ nav {
 /* PROJECTS SECTION */
 
 .projects-section {
-  @include section-align();
+  @include abstracts.section-align();
 
   .header {
-    @include section-header();
+    @include abstracts.section-header();
     margin-bottom: 2.5rem;
   }
   .card-grid {
@@ -247,13 +174,13 @@ nav {
     align-items: flex-start;
 
     .card {
-      background-color: $clr-primary;
+      background-color: abstracts.$clr-primary;
       border-radius: 0.75rem;
       overflow: hidden;
-      box-shadow: $box-shadow;
+      box-shadow: abstracts.$box-shadow;
 
       .card-title {
-        font-size: $h3-size;
+        font-size: abstracts.$h3-size;
         margin-bottom: 0.5rem;
         padding: 1rem;
         padding-bottom: 0;
@@ -282,7 +209,7 @@ nav {
       }
 
       .card-body {
-        font-size: $p-size;
+        font-size: abstracts.$p-size;
         padding: 0 1rem;
         margin-bottom: 1rem;
 
@@ -295,7 +222,7 @@ nav {
           margin: 0.5rem 0;
 
           .technology {
-            font-size: $technology-size;
+            font-size: abstracts.$technology-size;
             background-color: black;
             color: white;
             padding: 0.5em 1em;
@@ -318,10 +245,10 @@ nav {
 /* CONTACT SECTION */
 
 .contact-section {
-  @include section-align();
+  @include abstracts.section-align();
 
   .header {
-    @include section-header();
+    @include abstracts.section-header();
   }
 
   .btn {
@@ -374,7 +301,7 @@ nav {
         padding: 0.5em;
         border: 0;
         border-radius: 0.5rem;
-        box-shadow: $box-shadow;
+        box-shadow: abstracts.$box-shadow;
       }
     }
   }
@@ -416,7 +343,7 @@ nav {
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: $clr-secondary;
+      background-color: abstracts.$clr-secondary;
       width: 100%;
       text-align: center;
       transition: 0.3s;

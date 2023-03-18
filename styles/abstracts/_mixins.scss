@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+@mixin section-header {
+  font-size: variables.$h2-size;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+@mixin section-align {
+  margin: variables.$section-margin;
+  text-align: center;
+}

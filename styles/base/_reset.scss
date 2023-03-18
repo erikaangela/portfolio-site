@@ -1,0 +1,24 @@
+@use "../abstracts";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* For ease in setting padding */
+  scroll-behavior: smooth;
+
+  &::before {
+    @extend *;
+  }
+  &::after {
+    @extend *;
+  }
+}
+
+body,
+.btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-se;
+
+  background-color: abstracts.$clr-primary;
+}

@@ -1,0 +1,25 @@
+@use "../abstracts";
+
+.btn {
+  background: abstracts.$clr-accent;
+  color: abstracts.$clr-primary;
+  border: none;
+  padding: 0.5em 3em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: abstracts.$btn-size;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:hover,
+  &:focus {
+    background: abstracts.$clr-accent--lt;
+  }
+
+  + {
+    .btn {
+      margin-left: 0.25rem;
+    }
+  }
+}
