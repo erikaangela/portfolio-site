@@ -18,8 +18,10 @@
 
   .hero-image {
     width: 50%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
+    object-position: center;
+
     border: 3px solid hsl(96, 18%, 74%);
     box-shadow: 6px 6px hsl(96, 18%, 74%);
 
