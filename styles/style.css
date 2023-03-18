@@ -83,6 +83,37 @@ nav .hamburger .bar {
   transition: all 0.3s ease-in-out;
   background-color: hsl(50, 18%, 93%);
 }
+@media (max-width: 768px) {
+  nav .hamburger {
+    display: block;
+  }
+  nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  nav .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: hsl(218, 45%, 15%);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  nav .nav-item {
+    margin: 16px 0;
+  }
+  nav .nav-menu.active {
+    left: 0;
+  }
+}
 
 /* HEADER SECTION */
 .header-section {
@@ -105,6 +136,17 @@ nav .hamburger .bar {
   -webkit-clip-path: circle(34%);
           clip-path: circle(34%);
   z-index: -1;
+}
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+  }
+  .header-section .hero-image {
+    width: 100%;
+    -webkit-clip-path: circle(34%);
+            clip-path: circle(34%);
+    z-index: -1;
+  }
 }
 
 /* ABOUT ME AND SKILLS SECTION */
@@ -147,6 +189,14 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   font-size: 1.25em;
   line-height: 2.2rem;
 }
+@media (max-width: 768px) {
+  .about-section {
+    margin: 0;
+  }
+  .about-section .body .bio {
+    padding: 0 1.5em;
+  }
+}
 
 .skills-section {
   margin: 4.5rem;
@@ -168,6 +218,15 @@ position is relative to .diagonal's relative position, which keeps it in the flo
 }
 .skills-section .skills-grid .skill {
   place-self: center;
+}
+@media (max-width: 768px) {
+  .skills-section .skills-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(2, 40px);
+    gap: 3.5rem;
+  }
 }
 
 /* PROJECTS SECTION */
@@ -247,6 +306,22 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   padding: 1.5rem;
   padding-top: 0;
 }
+@media (max-width: 768px) {
+  .projects-section .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+  }
+  .projects-section .card-grid .btn {
+    padding: 0.5em 1.75em;
+  }
+  .projects-section .card-grid .card .card-body .technologies .technology {
+    font-size: 0.65em;
+  }
+}
 
 /* CONTACT SECTION */
 .contact-section {
@@ -304,90 +379,18 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   border-radius: 0.5rem;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
-
-/* SITE END */
-.creator {
-  margin: auto 0 0.5rem 0;
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-/* MEDIA QUERIES */
 @media (max-width: 768px) {
-  /* Navigation */
-  nav .hamburger {
-    display: block;
-  }
-  nav .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  nav .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  nav .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  nav .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: hsl(218, 45%, 15%);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-  nav .nav-item {
-    margin: 16px 0;
-  }
-  nav .nav-menu.active {
-    left: 0;
-  }
-  /* HEADER SECTION */
-  .header-section {
-    flex-direction: column;
-  }
-  .header-section .hero-image {
-    width: 100%;
-    -webkit-clip-path: circle(34%);
-            clip-path: circle(34%);
-    z-index: -1;
-  }
-  /* ABOUT ME AND SKILLS SECTION */
-  .about-section {
-    margin: 0;
-  }
-  .about-section .body .bio {
-    padding: 0 1.5em;
-  }
-  .skills-section .skills-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 40px);
-    grid-template-rows: repeat(2, 40px);
-    gap: 3.5rem;
-  }
-  /* PROJECTS SECTION */
-  .projects-section .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 2rem;
-  }
-  .projects-section .card-grid .btn {
-    padding: 0.5em 1.75em;
-  }
-  .projects-section .card-grid .card .card-body .technologies .technology {
-    font-size: 0.65em;
-  }
-  /* CONTACT SECTION */
   .contact-section .contact-flex .contact-links {
     gap: 0.75rem;
   }
   .contact-section .form-item {
     max-width: 300px;
   }
+}
+
+/* SITE END */
+.creator {
+  margin: auto 0 0.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

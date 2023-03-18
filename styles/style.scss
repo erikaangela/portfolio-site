@@ -64,6 +64,46 @@ nav {
       background-color: abstracts.$clr-primary;
     }
   }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+
+      &.active {
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: abstracts.$clr-secondary;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .nav-item {
+      margin: 16px 0;
+    }
+
+    .nav-menu {
+      &.active {
+        left: 0;
+      }
+    }
+  }
 }
 
 /* HEADER SECTION */
@@ -88,6 +128,16 @@ nav {
     width: 50%;
     clip-path: circle(34%);
     z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .hero-image {
+      width: 100%;
+      clip-path: circle(34%);
+      z-index: -1;
+    }
   }
 }
 
@@ -134,6 +184,16 @@ nav {
       line-height: 2.2rem;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 0;
+
+    .body {
+      .bio {
+        padding: 0 1.5em;
+      }
+    }
+  }
 }
 
 .skills-section {
@@ -153,6 +213,16 @@ nav {
 
     .skill {
       place-self: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skills-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows: repeat(2, 40px);
+      gap: 3.5rem;
     }
   }
 }
@@ -240,6 +310,31 @@ nav {
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem;
+
+      .btn {
+        padding: 0.5em 1.75em;
+      }
+
+      .card {
+        .card-body {
+          .technologies {
+            .technology {
+              font-size: 0.65em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* CONTACT SECTION */
@@ -305,125 +400,8 @@ nav {
       }
     }
   }
-}
 
-/* SITE END */
-
-.creator {
-  margin: auto 0 0.5rem 0;
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 768px) {
-  /* Navigation */
-
-  nav {
-    .hamburger {
-      display: block;
-
-      &.active {
-        .bar:nth-child(2) {
-          opacity: 0;
-        }
-        .bar:nth-child(1) {
-          transform: translateY(8px) rotate(45deg);
-        }
-        .bar:nth-child(3) {
-          transform: translateY(-8px) rotate(-45deg);
-        }
-      }
-    }
-
-    .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: abstracts.$clr-secondary;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .nav-item {
-      margin: 16px 0;
-    }
-
-    .nav-menu {
-      &.active {
-        left: 0;
-      }
-    }
-  }
-
-  /* HEADER SECTION */
-
-  .header-section {
-    flex-direction: column;
-
-    .hero-image {
-      width: 100%;
-      clip-path: circle(34%);
-      z-index: -1;
-    }
-  }
-
-  /* ABOUT ME AND SKILLS SECTION */
-
-  .about-section {
-    margin: 0;
-
-    .body {
-      .bio {
-        padding: 0 1.5em;
-      }
-    }
-  }
-
-  .skills-section {
-    .skills-grid {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(3, 40px);
-      grid-template-rows: repeat(2, 40px);
-      gap: 3.5rem;
-    }
-  }
-
-  /* PROJECTS SECTION */
-
-  .projects-section {
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2.5rem;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 2rem;
-
-      .btn {
-        padding: 0.5em 1.75em;
-      }
-
-      .card {
-        .card-body {
-          .technologies {
-            .technology {
-              font-size: 0.65em;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /* CONTACT SECTION */
-
-  .contact-section {
+  @media (max-width: 768px) {
     .contact-flex {
       .contact-links {
         gap: 0.75rem;
@@ -434,4 +412,12 @@ nav {
       max-width: 300px;
     }
   }
+}
+
+/* SITE END */
+
+.creator {
+  margin: auto 0 0.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
 }
