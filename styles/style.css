@@ -141,16 +141,15 @@ nav .hamburger .bar {
   }
   .header-section .hero-image {
     width: 100%;
-    -webkit-clip-path: circle(34%);
-            clip-path: circle(34%);
-    z-index: -1;
+    margin-bottom: -7.5rem;
+    z-index: 1;
   }
 }
 
 .diagonal {
   position: relative;
   isolation: isolate; /* Keeps z-index of ::after contained within .diagonal in case of future bg */
-  padding-block: 1rem 2.5rem;
+  padding-block: 3.5rem 2.5rem;
 }
 
 .diagonal::after {

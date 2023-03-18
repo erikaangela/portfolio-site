@@ -1,7 +1,7 @@
 .diagonal {
   position: relative;
   isolation: isolate; /* Keeps z-index of ::after contained within .diagonal in case of future bg */
-  padding-block: 1rem 2.5rem;
+  padding-block: 3.5rem 2.5rem;
 }
 
 .diagonal::after {

@@ -30,8 +30,9 @@
 
     .hero-image {
       width: 100%;
-      clip-path: circle(34%);
-      z-index: -1;
+
+      margin-bottom: -7.5rem;
+      z-index: 1;
     }
   }
 }
