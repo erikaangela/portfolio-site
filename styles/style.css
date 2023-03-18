@@ -43,7 +43,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 nav .nav-branding {
   font-size: 1.75rem;
@@ -132,6 +132,8 @@ nav .hamburger .bar {
   width: 50%;
   border: 3px solid hsl(96, 18%, 74%);
   box-shadow: 6px 6px hsl(96, 18%, 74%);
+  margin-bottom: -7rem;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   .header-section {
