@@ -1,0 +1,76 @@
+@use "../abstracts";
+
+.contact-section {
+  @include abstracts.section-align();
+
+  .header {
+    @include abstracts.section-header();
+  }
+
+  .btn {
+    @extend .btn;
+    border-radius: 3em;
+    padding: 1em 1.2em;
+  }
+
+  .body {
+    padding: 4rem 0 8rem 0;
+  }
+
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    input[name="bot-field"] {
+      display: none;
+    }
+
+    label,
+    .form-input {
+      font-family: inherit;
+      font-weight: 650;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .form-item {
+      display: flex;
+      flex-direction: column;
+
+      .form-input {
+        margin-top: 0.5rem;
+        padding: 0.5em;
+        border: 0;
+        border-radius: 0.5rem;
+        box-shadow: abstracts.$box-shadow;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-flex {
+      .contact-links {
+        gap: 0.75rem;
+      }
+    }
+
+    .form-item {
+      max-width: 300px;
+    }
+  }
+}

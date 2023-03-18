@@ -1,0 +1,19 @@
+.diagonal {
+  position: relative;
+  isolation: isolate; /* Keeps z-index of ::after contained within .diagonal in case of future bg */
+  padding-block: 1rem 2.5rem;
+}
+
+.diagonal::after {
+  content: "";
+  background: linear-gradient(
+    hsl(224, 33%, 88%),
+    hsl(224, 33%, 81.5%),
+    hsl(224, 33%, 75%)
+  );
+  position: absolute; /* Pseudo element living in .diagonal so is 
+    position is relative to .diagonal's relative position, which keeps it in the flow */
+  z-index: -1;
+  inset: 0; /* Shorthand for top bottom left right */
+  transform: skewY(-5.5deg);
+}

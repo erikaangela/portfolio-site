@@ -1,0 +1,32 @@
+@use "../abstracts";
+
+.skills-section {
+  @include abstracts.section-align();
+
+  .header {
+    @include abstracts.section-header();
+  }
+
+  .skills-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 40px);
+    gap: 3.5rem;
+    margin: abstracts.$section-margin;
+    margin-top: 2rem;
+
+    .skill {
+      place-self: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skills-grid {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows: repeat(2, 40px);
+      gap: 3.5rem;
+    }
+  }
+}
