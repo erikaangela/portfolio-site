@@ -124,12 +124,14 @@ nav .hamburger .bar {
 }
 .header-section .hero-title {
   font-size: 4rem;
+  letter-spacing: 1.5px;
 }
 .header-section .hero-subtitle {
   font-size: 2rem;
+  letter-spacing: 1px;
 }
 .header-section .hero-image {
-  width: 50%;
+  width: 35%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
