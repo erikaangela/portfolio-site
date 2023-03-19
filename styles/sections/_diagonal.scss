@@ -1,7 +1,7 @@
 .diagonal {
   position: relative;
   isolation: isolate; /* Keeps z-index of ::after contained within .diagonal in case of future bg */
-  padding-block: 2.5rem;
+  padding-block: 1.5rem 2.5rem;
 }
 
 .diagonal::after {
@@ -15,5 +15,5 @@
     position is relative to .diagonal's relative position, which keeps it in the flow */
   z-index: -1;
   inset: 0; /* Shorthand for top bottom left right */
-  transform: skewY(-5.5deg);
+  transform: skewY(5.5deg);
 }

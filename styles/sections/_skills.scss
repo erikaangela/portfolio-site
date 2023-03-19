@@ -2,6 +2,7 @@
 
 .skills-section {
   @include abstracts.section-align();
+  margin-top: 2rem;
 
   .header {
     @include abstracts.section-header();

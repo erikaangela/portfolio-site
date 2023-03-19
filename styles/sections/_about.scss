@@ -2,13 +2,14 @@
 
 .about-section {
   @include abstracts.section-align();
+  margin-bottom: 2rem;
 
   .header {
     @include abstracts.section-header();
   }
 
   .body {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +17,7 @@
     gap: 1.5rem;
 
     .bio {
-      padding: 0 4em;
+      padding: 0 2em;
       font-size: abstracts.$p-size;
       line-height: 2.2rem;
     }
