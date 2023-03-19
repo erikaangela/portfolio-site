@@ -3,7 +3,7 @@
 .header-section {
   @include abstracts.section-align();
   margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
-  margin-bottom: 6rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;

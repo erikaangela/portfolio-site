@@ -10,12 +10,12 @@ used in */
 body,
 .btn {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: hsl(50, 18%, 93%);
+  background-color: hsl(276, 33%, 97%);
 }
 
 .btn {
   background: hsl(224, 33%, 75%);
-  color: hsl(50, 18%, 93%);
+  color: hsl(276, 33%, 97%);
   border: none;
   padding: 0.5em 3em;
   border-radius: 0.5em;
@@ -60,7 +60,7 @@ nav .nav-link {
   transition: 0.7s ease;
 }
 nav .nav-link:hover {
-  color: hsl(50, 18%, 93%);
+  color: hsl(276, 33%, 97%);
 }
 nav a {
   color: white;
@@ -79,7 +79,7 @@ nav .hamburger .bar {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: hsl(50, 18%, 93%);
+  background-color: hsl(276, 33%, 97%);
 }
 @media (max-width: 768px) {
   nav .hamburger {
@@ -117,7 +117,7 @@ nav .hamburger .bar {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
-  margin-bottom: 6rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +235,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   align-items: flex-start;
 }
 .projects-section .card-grid .card {
-  background-color: hsl(50, 18%, 93%);
+  background-color: hsl(276, 33%, 97%);
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
