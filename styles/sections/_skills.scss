@@ -6,6 +6,7 @@
 
   .header {
     @include abstracts.section-header();
+    color: abstracts.$clr-text;
   }
 
   .skills-grid {
@@ -17,6 +18,7 @@
     margin-top: 2rem;
 
     .skill {
+      color: abstracts.$clr-text;
       place-self: center;
     }
   }

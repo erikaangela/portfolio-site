@@ -1,7 +1,10 @@
 /* Site End */
 
+@use "../abstracts";
+
 .creator {
   margin: auto 0 0.5rem 0;
   text-align: center;
   font-size: 0.8rem;
+  color: abstracts.$clr-text;
 }

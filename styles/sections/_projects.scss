@@ -5,6 +5,7 @@
 
   .header {
     @include abstracts.section-header();
+    color: abstracts.$clr-text;
     margin-bottom: 2.5rem;
   }
   .card-grid {
@@ -21,6 +22,7 @@
       box-shadow: abstracts.$box-shadow;
 
       .card-title {
+        color: abstracts.$clr-text;
         font-size: abstracts.$h3-size;
         margin-bottom: 0.5rem;
         padding: 1rem;
@@ -50,6 +52,7 @@
       }
 
       .card-body {
+        color: abstracts.$clr-text;
         font-size: abstracts.$p-size--card;
         padding: 0 1rem;
         margin-bottom: 1rem;
@@ -64,7 +67,7 @@
 
           .technology {
             font-size: abstracts.$technology-size;
-            background-color: black;
+            background-color: abstracts.$clr-text;
             color: white;
             padding: 0.5em 1em;
             border-radius: 3em;

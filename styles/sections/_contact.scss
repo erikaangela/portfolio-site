@@ -5,6 +5,7 @@
 
   .header {
     @include abstracts.section-header();
+    color: abstracts.$clr-text;
   }
 
   .btn {
@@ -29,6 +30,7 @@
 
   .email {
     font-size: abstracts.$p-size--email;
+    color: abstracts.$clr-text;
     display: inline-block;
 
     border: 3px solid abstracts.$clr-secondary;
@@ -50,6 +52,7 @@
       font-family: inherit;
       font-weight: 650;
       font-size: 1.2rem;
+      color: abstracts.$clr-text;
       letter-spacing: 1px;
     }
 

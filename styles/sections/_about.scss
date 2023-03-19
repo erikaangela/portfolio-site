@@ -6,6 +6,7 @@
 
   .header {
     @include abstracts.section-header();
+    color: abstracts.$clr-text;
   }
 
   .body {
@@ -17,6 +18,7 @@
     gap: 1.5rem;
 
     .bio {
+      color: abstracts.$clr-text;
       padding: 0 2em;
       font-size: abstracts.$p-size;
       line-height: 2.2rem;
