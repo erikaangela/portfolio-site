@@ -13,6 +13,11 @@ body,
   background-color: hsl(276, 33%, 97%);
 }
 
+h2,
+h3 {
+  letter-spacing: 1.5px;
+}
+
 .btn {
   background: hsl(224, 33%, 75%);
   color: hsl(276, 33%, 97%);
@@ -366,7 +371,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   font-weight: 650;
   font-size: 1.2rem;
   color: hsl(240, 4%, 16%);
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 .contact-section .contact-form .form-item {
   display: flex;
