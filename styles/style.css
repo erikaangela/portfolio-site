@@ -174,9 +174,9 @@ position is relative to .diagonal's relative position, which keeps it in the flo
 .about-section .body .bio {
   color: hsl(240, 4%, 16%);
   padding: 0 2em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 2.3rem;
 }
 @media (max-width: 768px) {
   .about-section {
