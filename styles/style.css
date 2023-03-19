@@ -137,8 +137,8 @@ nav .hamburger .bar {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border: 3px solid hsl(96, 18%, 74%);
-  box-shadow: 6px 6px hsl(96, 18%, 74%);
+  border: 3px solid hsl(218, 45%, 15%);
+  box-shadow: 6px 6px hsl(218, 45%, 15%);
   margin-bottom: -7.5rem;
   z-index: 1;
 }

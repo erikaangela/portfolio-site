@@ -24,8 +24,8 @@
     object-fit: cover;
     object-position: center;
 
-    border: 3px solid hsl(96, 18%, 74%);
-    box-shadow: 6px 6px hsl(96, 18%, 74%);
+    border: 3px solid abstracts.$clr-secondary;
+    box-shadow: 6px 6px abstracts.$clr-secondary;
 
     margin-bottom: -7.5rem;
     z-index: 1;
