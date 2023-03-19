@@ -11,11 +11,11 @@
 
   .hero-title {
     font-size: abstracts.$h1-size;
-    letter-spacing: 1.5px;
+    letter-spacing: abstracts.$letter-spacing;
   }
 
   .hero-subtitle {
     font-size: abstracts.$h3-size;
-    letter-spacing: 1px;
+    letter-spacing: abstracts.$letter-spacing;
   }
 }

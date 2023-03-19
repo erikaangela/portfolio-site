@@ -7,6 +7,7 @@
   .header {
     @include abstracts.section-header();
     color: abstracts.$clr-text;
+    letter-spacing: abstracts.$letter-spacing;
   }
 
   .skills-grid {
