@@ -340,31 +340,6 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   border-radius: 3em;
   padding: 1em 1.2em;
 }
-.contact-section .contact-grid {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
-  margin-top: 1rem;
-}
-.contact-section .contact-grid .email {
-  font-size: 1.12em;
-  margin-left: auto;
-  border: 3px solid hsl(218, 45%, 15%);
-  box-shadow: 6px 6px hsl(218, 45%, 15%);
-  padding: 1em;
-}
-.contact-section .contact-grid .contact-image {
-  width: 30%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border: 3px solid hsl(218, 45%, 15%);
-  box-shadow: 6px 6px hsl(218, 45%, 15%);
-}
 .contact-section .contact-flex {
   display: flex;
   flex-direction: column;
@@ -373,9 +348,16 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   gap: 2.5rem;
   margin-top: 2rem;
 }
-.contact-section .contact-links {
+.contact-section .contact-flex .contact-links {
   display: flex;
   gap: 2rem;
+}
+.contact-section .email {
+  font-size: 1.12em;
+  display: inline-block;
+  border: 3px solid hsl(218, 45%, 15%);
+  box-shadow: 6px 6px hsl(218, 45%, 15%);
+  padding: 1em;
 }
 .contact-section .contact-form {
   display: flex;
@@ -404,6 +386,10 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 768px) {
+  .contact-section .email {
+    font-size: 1em;
+    margin-left: 0;
+  }
   .contact-section .contact-flex .contact-links {
     gap: 0.75rem;
   }
