@@ -33,7 +33,7 @@ body,
 }
 
 nav {
-  background-color: hsl(218, 45%, 15%);
+  background-color: hsl(217, 45%, 15%);
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -100,7 +100,7 @@ nav .hamburger .bar {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: hsl(218, 45%, 15%);
+    background-color: hsl(217, 45%, 15%);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -338,8 +338,8 @@ position is relative to .diagonal's relative position, which keeps it in the flo
 .contact-section .email {
   font-size: 1.12em;
   display: inline-block;
-  border: 3px solid hsl(218, 45%, 15%);
-  box-shadow: 6px 6px hsl(218, 45%, 15%);
+  border: 3px solid hsl(217, 45%, 15%);
+  box-shadow: 6px 6px hsl(217, 45%, 15%);
   padding: 1em;
 }
 .contact-section .contact-form {
