@@ -275,8 +275,8 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
 }
 .projects-section .card-grid .card .card-image > img:hover {
   transform: scale(1.025);

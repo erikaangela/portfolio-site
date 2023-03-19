@@ -39,7 +39,7 @@
             /* Maintains a 16x9 img of any size, avoids loss of quality */
             aspect-ratio: 16 / 9;
             object-fit: cover;
-            object-position: center;
+            object-position: top;
 
             &:hover {
               transform: scale(1.025);
