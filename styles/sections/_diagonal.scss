@@ -7,8 +7,8 @@
 .diagonal::after {
   content: "";
   background: linear-gradient(
-    hsl(224, 33%, 88%),
-    hsl(224, 33%, 81.5%),
+    hsl(224, 33%, 90%),
+    hsl(224, 33%, 83%),
     hsl(224, 33%, 75%)
   );
   position: absolute; /* Pseudo element living in .diagonal so is 
