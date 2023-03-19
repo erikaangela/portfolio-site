@@ -25,6 +25,10 @@
     .email {
       font-size: abstracts.$p-size--email;
       margin-left: auto;
+
+      border: 3px solid abstracts.$clr-secondary;
+      box-shadow: 6px 6px abstracts.$clr-secondary;
+      padding: 1em;
     }
 
     .contact-image {
