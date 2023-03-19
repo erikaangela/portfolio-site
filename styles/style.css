@@ -246,7 +246,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
 }
 .projects-section .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   justify-content: center;
   align-items: flex-start;
