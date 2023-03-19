@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -108,13 +108,13 @@
               <div class="technology">CSS</div>
               <div class="technology">Semantic UI</div>
             </div>
-            <p class="description">
-              The one-page app first displays a Spotify logo and searchbar.
-              Users can search by inputting any keyword; upon submitting, the
-              first 50 results are rendered as clickable cards containing the
-              song image, title, and artist. Clicking any will open the song on
-              Spotify in a new tab.
-            </p>
+            <div class="description">
+              <p>Spotify-inspired search function using the Spotify API.</p>
+              <p>
+                Features use of the Spotify Web API JS npm package and
+                environmental variables to store the client ID and secret.
+              </p>
+            </div>
           </div>
           <div class="card-footer">
             <a
@@ -152,15 +152,16 @@
               <div class="technology">CSS</div>
               <div class="technology">Semantic UI</div>
             </div>
-            <p class="description">
-              The header—containing a home button, title, and Google log-in
-              button—is shown upon initial load. The user must log-in through
-              Google to access the rest of the app. After logging in through the
-              Google API, a button to add a task will be shown. Each task can
-              then be edited or deleted. Within the editing and deleting
-              functions, the user will automatically be taken back to the
-              homepage displaying the list after the action.
-            </p>
+            <div class="description">
+              <p>
+                To-do list app using React-Redux and JSON-server to store tasks.
+              </p>
+              <p>
+                Requires log-in with a Google account to add, edit, delete, and
+                access tasks.
+              </p>
+              <p>Features Sign In With Google for authentication.</p>
+            </div>
           </div>
           <div class="card-footer">
             <a
@@ -191,17 +192,12 @@
               <div class="technology">CSS</div>
               <div class="technology">Semantic UI</div>
             </div>
-            <p class="description">
-              Upon the initial load, a main news feed and popular news sidebar
-              is shown. Each article features the title, date, author, source,
-              and description - all deriving from the API; clicking on any
-              article always opens the original article in a new tab. Clicking
-              the "Search" button will take you to another page that features an
-              input with a default search term of "programming." Type in any
-              term(s) and the feed will update to show the first 20 results
-              using the News API's "everything" endpoint. Navigate back to the
-              main page by clicking the "Home" button or the Hacker News logo.
-            </p>
+            <div class="description">
+              <p>
+                A mockup of HackerNews.com using the News API with working feeds
+                and search.
+              </p>
+            </div>
           </div>
           <div class="card-footer">
             <a

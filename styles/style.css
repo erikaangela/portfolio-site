@@ -10,6 +10,7 @@ used in */
 body,
 .btn {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
   background-color: hsl(276, 33%, 97%);
 }
 
@@ -174,6 +175,7 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   color: hsl(240, 4%, 16%);
   padding: 0 2em;
   font-size: 1.5em;
+  font-weight: 400;
   line-height: 2.2rem;
 }
 @media (max-width: 768px) {
@@ -298,6 +300,13 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   border-radius: 3em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+.projects-section .card-grid .card .card-body .description {
+  padding: 0.5em 1em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 .projects-section .card-grid .card .card-footer {
   margin-top: 0.5rem;

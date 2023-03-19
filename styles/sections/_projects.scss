@@ -79,6 +79,15 @@
             letter-spacing: 0.1em;
           }
         }
+
+        .description {
+          padding: 0.5em 1em;
+          font-weight: 400;
+
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+        }
       }
 
       .card-footer {
