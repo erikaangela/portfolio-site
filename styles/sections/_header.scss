@@ -3,6 +3,7 @@
 .header-section {
   @include abstracts.section-align();
   margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
+  margin-bottom: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,26 +17,5 @@
   .hero-subtitle {
     font-size: abstracts.$h3-size;
     letter-spacing: 1px;
-  }
-
-  .hero-image {
-    width: 35%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-
-    border: 3px solid abstracts.$clr-secondary;
-    box-shadow: 6px 6px abstracts.$clr-secondary;
-
-    margin-bottom: -7.5rem;
-    z-index: 1;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-
-    .hero-image {
-      width: 100%;
-    }
   }
 }

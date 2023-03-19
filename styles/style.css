@@ -117,6 +117,7 @@ nav .hamburger .bar {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
+  margin-bottom: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,26 +130,6 @@ nav .hamburger .bar {
 .header-section .hero-subtitle {
   font-size: 2rem;
   letter-spacing: 1px;
-}
-.header-section .hero-image {
-  width: 35%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border: 3px solid hsl(218, 45%, 15%);
-  box-shadow: 6px 6px hsl(218, 45%, 15%);
-  margin-bottom: -7.5rem;
-  z-index: 1;
-}
-@media (max-width: 768px) {
-  .header-section {
-    flex-direction: column;
-  }
-  .header-section .hero-image {
-    width: 100%;
-  }
 }
 
 .diagonal {
