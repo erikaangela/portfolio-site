@@ -55,6 +55,7 @@ nav .nav-menu {
   align-items: center;
   gap: 1rem;
   font-size: 1.75rem;
+  letter-spacing: 0.5px;
 }
 nav .nav-link {
   transition: 0.7s ease;
