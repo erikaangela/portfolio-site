@@ -340,8 +340,27 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   border-radius: 3em;
   padding: 1em 1.2em;
 }
-.contact-section .body {
-  padding: 4rem 0 8rem 0;
+.contact-section .contact-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+.contact-section .contact-grid .email {
+  font-size: 1.12em;
+  margin-left: auto;
+}
+.contact-section .contact-grid .contact-image {
+  width: 30%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 3px solid hsl(218, 45%, 15%);
+  box-shadow: 6px 6px hsl(218, 45%, 15%);
 }
 .contact-section .contact-flex {
   display: flex;

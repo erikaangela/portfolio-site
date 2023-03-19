@@ -13,8 +13,29 @@
     padding: 1em 1.2em;
   }
 
-  .body {
-    padding: 4rem 0 8rem 0;
+  .contact-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+    margin-top: 1rem;
+
+    .email {
+      font-size: abstracts.$p-size--email;
+      margin-left: auto;
+    }
+
+    .contact-image {
+      width: 30%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+
+      border: 3px solid abstracts.$clr-secondary;
+      box-shadow: 6px 6px abstracts.$clr-secondary;
+    }
   }
 
   .contact-flex {
