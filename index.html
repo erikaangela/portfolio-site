@@ -1,823 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Erika Manalastas</title>
+    <link rel="icon" href="./favicon_io/favicon.png" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Erika Manalastas</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1c8c19404c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Semantic UI -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal - v4.7.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="index.html">Erika Manalastas</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2><span>Front-End Software Engineering</span></h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <!-- <li><a class="nav-link" href="#about">About</a></li> -->
-          <!-- <li><a class="nav-link" href="#resume">Resume</a></li> -->
-          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
-          <li><a class="nav-link" href="#portfolio">Resume | Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://medium.com/@erikaangela4" target="_blank" class="medium"><i class="bi bi-medium"></i></a>
-        <a href="https://github.com/erikaangela" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/erika-manalastas/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  <body>
+    <nav>
+      <a href="#" class="nav-branding">EM.</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div aria-label="menu" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
+    </nav>
 
-    </div>
-  </header><!-- End Header -->
+    <header class="header-section">
+      <div class="hero-titles">
+        <h1 class="hero-title">Erika Manalastas</h1>
+        <h3 class="hero-subtitle">Frontend Developer</h3>
+      </div>
+    </header>
 
-  <!-- ======= About Section ======= -->
-  <!-- <section id="about" class="about"> -->
-
-    <!-- ======= About Me ======= -->
-    <!-- <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2> -->
-        <!-- <p>Learn more about me</p> -->
-      <!-- </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="Photo of Erika, facing forward.">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Erika A. Manalastas</h3>
-          <p class="fst-italic">
-            Frontend JavaScript Developer | React JS
+    <section class="diagonal" id="about">
+      <article class="about-section">
+        <h2 class="header">About</h2>
+        <div class="body">
+          <p class="bio">
+            I'm a pure math grad turned front-end developer who prioritizes
+            functionality and clean, responsive design. I enjoy learning about
+            new ways to make my code accessible and current.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(510) 402 - 9098</span></li> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li> -->
-              <!-- </ul>
+          <p class="bio">On the side, I like to</p>
+        </div>
+      </article>
+
+      <article class="skills-section">
+        <h2 class="header">Skills</h2>
+        <div class="body skills-grid">
+          <div class="skill" aria-label="html5">
+            <i class="fa-brands fa-html5 fa-4x"></i>
+          </div>
+          <div class="skill" aria-label="css3">
+            <i class="fa-brands fa-css3-alt fa-4x"></i>
+          </div>
+          <div class="skill" aria-label="javascript">
+            <i class="fa-brands fa-square-js fa-4x"></i>
+          </div>
+          <div class="skill" aria-label="react">
+            <i class="fa-brands fa-react fa-4x"></i>
+          </div>
+          <div class="skill" aria-label="sass">
+            <i class="fa-brands fa-sass fa-4x"></i>
+          </div>
+          <div class="skill" aria-label="bootstrap">
+            <i class="fa-brands fa-bootstrap fa-4x"></i>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="header">Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-image">
+            <img
+              loading="lazy"
+              src="images/spotify.png"
+              alt="Screengrab of Spotify App"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Spotify App</h3>
+            <div class="technologies">
+              <div class="technology">JavaScript</div>
+              <div class="technology">React</div>
+              <div class="technology">Axios</div>
+              <div class="technology">HTML</div>
+              <div class="technology">CSS</div>
+              <div class="technology">Semantic UI</div>
             </div>
-            <div class="col-lg-6">
-              <ul> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mana.erikaa@gmail.com</span></li> -->
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-              <!-- </ul>
-            </div>
-          </div>
-          <p>
-            Currently teaching myself HTML, CSS, and JavaScript with a mentor, working my way up to other areas of web development including JavaScript and ReactJS. Striving to integrate time spent writing and debugging into my everyday, with an emphasis on rest and resiliency in my work.
-            <br><br>
-            <i>Medium</i> <a href="https://medium.com/@erikaangela4" target="_blank" class="medium"><i class="bi bi-medium"></i></a> holds a handful of <i>check-in</i> entries posted throughout my learning process&#8212;notetaking, habits, time management, staying on track, and general thoughts.
-          </p>
-        </div>
-      </div> -->
-
-    <!-- </div>End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <!-- <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div> -->
-    <!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <!-- <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">55%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div> -->
-    <!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <!-- <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Dolor Sitema</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Sed perspiciatis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Magni Dolores</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Nemo Enim</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Eiusmod Tempor</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Midela Teren</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Pira Neve</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Dirada Pack</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Moton Ideal</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Verdo Park</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Flavor Nivelanda</h3>
-          </div>
-        </div>
-      </div>
-
-    </div> -->
-    <!-- End Interests -->
-
-    <!-- ======= Testimonials ======= -->
-    <!-- <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
+            <div class="description">
+              <p>Spotify-inspired search function using the Spotify API.</p>
               <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                Features use of the Spotify Web API JS npm package and
+                environmental variables to store the client ID and secret.
               </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
             </div>
-          </div> -->
-          <!-- End testimonial item -->
+          </div>
+          <div class="card-footer">
+            <a
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://spotify-app-erikaangela.vercel.app/"
+              >Live</a
+            >
+            <a
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://github.com/erikaangela/spotify-app"
+              >Code</a
+            >
+          </div>
+        </div>
 
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
+        <div class="card">
+          <div class="card-header card-image">
+            <img
+              loading="lazy"
+              src="images/todo.png"
+              alt="Screengrab of ToDo App"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">ToDo App</h3>
+            <div class="technologies">
+              <div class="technology">JavaScript</div>
+              <div class="technology">React</div>
+              <div class="technology">Redux</div>
+              <div class="technology">HTML</div>
+              <div class="technology">CSS</div>
+              <div class="technology">Semantic UI</div>
+            </div>
+            <div class="description">
               <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                To-do list app using React-Redux and JSON-server to store tasks.
               </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
               <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                Requires log-in with a Google account to add, edit, delete, and
+                access tasks.
               </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <p>Features Sign In With Google for authentication.</p>
             </div>
-          </div> -->
-          <!-- End testimonial item -->
+          </div>
+          <div class="card-footer">
+            <a
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://github.com/erikaangela/toDoList-app"
+              >Code</a
+            >
+          </div>
+        </div>
 
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
+        <div class="card">
+          <div class="card-header card-image">
+            <img
+              loading="lazy"
+              src="images/news.png"
+              alt="Screengrab of Hacker News App"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hacker News App</h3>
+            <div class="technologies">
+              <div class="technology">JavaScript</div>
+              <div class="technology">React</div>
+              <div class="technology">Redux</div>
+              <div class="technology">HTML</div>
+              <div class="technology">CSS</div>
+              <div class="technology">Semantic UI</div>
+            </div>
+            <div class="description">
               <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                A mockup of HackerNews.com using the News API with working feeds
+                and search.
               </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
             </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-        <!-- </div>
-        <div class="swiper-pagination"></div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              href="https://github.com/erikaangela/hackerNews-app"
+              >Code</a
+            >
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="owl-carousel testimonials-carousel">
+    <footer id="contact" class="contact-section">
+      <h2 class="header">Contact</h2>
 
+      <div class="contact-flex">
+        <div class="contact-links">
+          <a
+            aria-label="linkedin"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://www.linkedin.com/in/erika-manalastas/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            aria-label="github"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://github.com/erikaangela"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            aria-label="medium"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            href="https://medium.com/@erikaangela4"
+            ><i class="fa-brands fa-medium"></i
+          ></a>
+        </div>
+
+        <p class="email">mana.erikaa@gmail.com</p>
+
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input name="bot-field" />
+          <div class="form-item">
+            <label for="name">Name</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea
+              class="form-input"
+              name="message"
+              id="message"
+              rows="4"
+              cols="50"
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
       </div>
+    </footer>
 
-    </div> -->
-    <!-- End Testimonials  -->
+    <footer class="creator">Erika Manalastas 2023</footer>
 
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <!-- <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume <a href="https://www.linkedin.com/in/erika-manalastas/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a></h2> -->
-        <!-- <p>Check My Resume</p> -->
-      <!-- </div>
-
-      <div class="row">
-        <div class="col-lg-6"> -->
-          <!-- <h3 class="resume-title">Summary</h3> -->
-          <!-- <div class="resume-item pb-0"> -->
-            <!-- <h4>Erika Manalastas</h4> -->
-            <!-- <p><em>Detail-oriented, responsible, and persistent worker—valuing communication, organization, and a holistic approach—committed to professionalism and efficiency within varying environments.</em></p>
-            <p>
-            <ul>
-              <li>San Francisco Bay Area</li>
-              <li>(510) 402-9098</li>
-              <li>mana.erikaa@gmail.com</li>
-            </ul>
-            </p>
-            <a href="https://resume.creddle.io/resume/76j9cncdqyj" target="_blank"><button class="ui button" >PDF Version</button></a>
-            <a href="https://resume.creddle.io/resume/76j9cncdqyj" download="Erika Manalastas Resume_CV"><button class="ui button" >Download PDF</button></a> -->
-
-            <!-- <p><em><b>Skills:</b> HTML5, CSS3, JavaScript, React JS, Redux, APIs, Bootstrap, Flexbox, Responsive Web Design, Axios, Git, GitHub, NPM, the command line</em></p> -->
-          <!-- </div> -->
-
-          <!-- <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Arts in Mathematics; Pure Math</h4>
-            <h5>2017 - 2021</h5>
-            <p><em>University of California, Santa Cruz, CA</em></p>
-            <p>Relevant Coursework: Calculus, Linear Algebra, Numerical Analysis, Complex Analysis, Number Theory, Euclidean and Non-Euclidean Geometry</p>
-            <p>Senior Thesis: <a href="https://drive.google.com/file/d/1zN4H_ZBdyDTfrPMD-xxxuDZyXc_tbFPK/view?usp=sharing" target="_blank">“Benford’s Law”</a> (Mar 2021)</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>JavaScript Developer</h4>
-            <h5>Oct 2021 - Present</h5>
-            <p><em>Self-taught | Resources: ROOTs Technology Coding and Career Prep Program, Codecademy, Online</em></p>
-            <p>
-            <ul>
-              <li>(ROOTs) Learn foundational skills related to HTML, CSS, and JavaScript through self-study and a project-oriented program.</li>
-              <li>(Codecademy) Topics included lists, loops, functions, strings, dictionaries, classes (additionally, files and modules), conditionals, functions, scope, arrays, loops, iterators, and objects. Learned the basics of how to configure, manipulate, and navigate the Command Line environment under Windows.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Math/English Tutor</h4>
-            <h5>Feb 2022 - present</h5>
-            <p><em>Tutoring Club, Newark, CA</em></p>
-            <p>
-            <ul>
-              <li>Instruct and encourage students, ranging from elementary to high school level, in effective understanding of schoolwork.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Barista</h4>
-            <h5>Jul 2021 - Feb 2022</h5>
-            <p><em>Starbucks, Fremont, CA</em></p>
-            <p>
-            <ul>
-              <li>Collaborated with a team to increase efficacy and overall communication.</li>
-              <li>Generated a positive atmosphere with personable customer interaction.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Undergraduate Team Manager</h4>
-            <h5>Aug 2020 - Jun 2021</h5>
-            <p><em>Human Rights Investigation Lab for the Americas (RCA), Santa Cruz, CA</em></p>
-            <p>
-            <ul>
-              <li>Investigated human rights issues using open source research tools independently and as part of a team.</li>
-              <li>Used digital tools for data collection including Google Earth, social media platforms, & other online content sources.</li>
-              <li>Developed critical insights into the complexity of human rights issues facing the Americas region.</li>
-              <li>Co-authored investigative research reports. (<a href="https://drive.google.com/file/d/1DRD-cOxGUYdA7izlpKrlmD3QdvD3dGI2/view" target="_blank">Social Media Report on Black Lives Matter</a>, <a href="https://www.culturalsurvival.org/news/memoriam-indigenous-human-rights-defenders-murdered-2020-latin-america" target="_blank">In Memoriam: Indigenous Human Rights Defenders Murdered in 2020 in Latin America</a>)</li>
-              <li>Provided oversight of peer team as an Undergraduate Team Manager.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Notetaker</h4>
-            <h5>Mar 2019 - Jun 2019</h5>
-            <p><em>Disability Resource Center (DRC), Santa Cruz, CA</em></p>
-            <p>
-            <ul>
-              <li>Promptly attended all lectures and required/unrequired sessions (i.e., labs, sections, midterm/final reviews) for General Chemistry class to ensure the material in recorded notes are thorough and maximized.</li>
-              <li>Provided clear and abundant communication by text/email with assigned DRC student, including meetups to give notes (within a week’s time of the previous lecture) and clarifications pertaining to the notes.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div> -->
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <!-- <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
-  <!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects <a href="https://github.com/erikaangela" target="_blank" class="github"><i class="bi bi-github"></i></a></h2>
-        <a href="https://resume.creddle.io/resume/76j9cncdqyj" target="_blank"><button class="ui black button">Online Resume</button></a>
-        <!-- <a href="https://resume.creddle.io/resume/76j9cncdqyj" download="Erika Manalastas Resume_CV"><i class="download icon"></i></a> -->
-        <!-- <p>My Work</p> -->
-      </div><br>
-<!-- 
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center"> -->
-          <!-- <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li> -->
-            <!-- <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li> -->
-            <!-- <li data-filter=".filter-web">Web</li>
-          </ul> -->
-      <!-- </div>
-      </div> -->
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <a href="https://github.com/erikaangela/spotify-app" target="_blank"><h1>Spotify App</h1></a><br>
-          <a href="https://github.com/erikaangela/toDoList-app" target="_blank"><h1>ToDo App</h1></a><br>
-          <a href="https://github.com/erikaangela/hackerNews-app" target="_blank"><h1>Hacker News App</h1></a><br>
-        </div>
-          <!-- <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 1</h4>
-              <div class="portfolio-links"> -->
-                <!-- <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a> -->
-                <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <div class="portfolio-links"> -->
-                <!-- <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a> -->
-                <!-- <a href="portfolio-details-2.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <div class="portfolio-links"> -->
-                <!-- <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a> -->
-                <!-- <a href="portfolio-details-3.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 4</h4>
-              <div class="portfolio-links"> -->
-                <!-- <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 4"><i class="bx bx-plus"></i></a> -->
-                <!-- <a href="portfolio-details-4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 5</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 5"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <!-- <p>Contact Me</p> -->
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>Location</h3>
-            <h3>San Francisco Bay Area</h3>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <a href="https://medium.com/@erikaangela4" target="_blank" class="medium"><i class="bi bi-medium"> Medium</i></a>
-              <a href="https://github.com/erikaangela" target="_blank" class="github"><i class="bi bi-github"> GitHub</i></a>
-              <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-              <a href="https://www.linkedin.com/in/erika-manalastas/" target="_blank" class="linkedin"><i class="bi bi-linkedin"> LinkedIn</i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <h3>mana.erikaa@gmail.com</h3>
-          </div>
-        </div>
-        <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Phone</h3>
-            <p>(510) 402 - 9098</p>
-          </div>
-        </div> -->
-      </div>
-
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
-
-    </div>
-  </section><!-- End Contact Section -->
-
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
