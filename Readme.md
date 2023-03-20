@@ -1,6 +1,6 @@
 # Hello - this is my old portfolio site.
 
-For my updated one - please visit this [link](https://erikamanalastas.netlify.app/).
+For my updated one - please visit this [link](https://erikamanalastas.netlify.app/). Thanks!
 
 ### Credit
 
