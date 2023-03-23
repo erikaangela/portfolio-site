@@ -238,7 +238,12 @@ position is relative to .diagonal's relative position, which keeps it in the flo
   letter-spacing: 1px;
   margin-bottom: 2.5rem;
 }
+.projects-section > a {
+  font-size: 1.2em;
+  color: hsl(217, 45%, 15%);
+}
 .projects-section .card-grid {
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;

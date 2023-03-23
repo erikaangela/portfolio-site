@@ -10,7 +10,16 @@
 
     margin-bottom: 2.5rem;
   }
+
+  > {
+    a {
+      font-size: abstracts.$p-size;
+      color: abstracts.$clr-secondary;
+    }
+  }
+
   .card-grid {
+    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
