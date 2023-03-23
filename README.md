@@ -1,7 +1,7 @@
 ## Portfolio for Erika Manalastas
 
 [Link to Portfolio site](https://erikamanalastas.netlify.app/)<br>
-To read more about my process building this, click for this Medium post.
+To read about my process building this, click for [this](https://medium.com/@erikaangela4/new-portfolio-site-finished-3f31ffa74c95) Medium post.
 
 ### Technologies Used
 
