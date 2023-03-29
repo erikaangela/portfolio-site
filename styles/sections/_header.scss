@@ -3,11 +3,11 @@
 .header-section {
   @include abstracts.section-align();
   margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
-  padding: 5rem;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
 
   .hero-title {
     font-size: abstracts.$h1-size;
@@ -17,5 +17,26 @@
   .hero-subtitle {
     font-size: abstracts.$h3-size;
     letter-spacing: abstracts.$letter-spacing;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    > {
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+
+    .toggle-btns {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }
