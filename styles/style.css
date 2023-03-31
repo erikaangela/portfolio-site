@@ -123,32 +123,14 @@ nav .hamburger .bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
 }
-.header-section .hero-title {
-  font-size: 4rem;
-  letter-spacing: 1px;
-}
-.header-section .hero-subtitle {
-  font-size: 2rem;
-  letter-spacing: 1px;
-}
-.header-section .toggle {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.header-section .toggle > h3 {
-  text-transform: uppercase;
-}
-.header-section .toggle .toggle-btns {
-  display: flex;
-  gap: 0.5rem;
-}
-@media (max-width: 768px) {
-  .header-section {
-    flex-direction: column;
-  }
+.header-section .keyboard-grid h1 {
+  font-size: 3rem;
+  color: gray;
+  padding: 0 40px 10px 5px;
+  border-radius: 5px;
+  background: linear-gradient(white, gray);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .diagonal {

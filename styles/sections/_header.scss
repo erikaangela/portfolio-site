@@ -7,36 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
 
-  .hero-title {
-    font-size: abstracts.$h1-size;
-    letter-spacing: abstracts.$letter-spacing;
-  }
-
-  .hero-subtitle {
-    font-size: abstracts.$h3-size;
-    letter-spacing: abstracts.$letter-spacing;
-  }
-
-  .toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-
-    > {
-      h3 {
-        text-transform: uppercase;
-      }
-    }
-
-    .toggle-btns {
-      display: flex;
-      gap: 0.5rem;
+  .keyboard-grid {
+    h1 {
+      font-size: abstracts.$h1-size;
+      color: gray;
+      padding: 0 40px 10px 5px;
+      border-radius: 5px;
+      background: linear-gradient(white, gray);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+        10px 10px 10px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
+        20px 20px 20px rgba(0, 0, 0, 0.1);
     }
   }
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+  // .hero-title {
+  //   font-size: abstracts.$h1-size;
+  //   letter-spacing: abstracts.$letter-spacing;
+  // }
+
+  // .hero-subtitle {
+  //   font-size: abstracts.$h3-size;
+  //   letter-spacing: abstracts.$letter-spacing;
+  // }
 }
