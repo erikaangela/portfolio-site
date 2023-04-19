@@ -119,18 +119,29 @@ nav .hamburger .bar {
   margin: 4.5rem;
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
-  padding: 5rem 0;
+  margin-bottom: 8rem;
+  padding: 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.header-section .keyboard-grid h1 {
-  font-size: 3rem;
-  color: gray;
-  padding: 0 40px 10px 5px;
-  border-radius: 5px;
-  background: linear-gradient(white, gray);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 10px 10px 10px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 20px 20px rgba(0, 0, 0, 0.1);
+.header-section .desk {
+  position: absolute;
+  width: 50%;
+  height: 15px;
+  bottom: 1em;
+  background-color: hsl(23, 54%, 14%);
+  border-radius: 1em;
+}
+.header-section .laptop {
+  position: absolute;
+  width: 175px;
+  height: 115px;
+  bottom: calc(1em + 15px); /* sitting on top of desk */
+  background-color: hsl(240, 4%, 16%);
+  border-top: 4px solid hsl(217, 45%, 15%);
+  border-radius: 0.5em 0.5em 0 0;
 }
 
 .diagonal {
