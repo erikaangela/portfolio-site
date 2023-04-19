@@ -28,4 +28,23 @@
     border-top: 4px solid abstracts.$clr-secondary;
     border-radius: 0.5em 0.5em 0 0;
   }
+
+  .book-one {
+    position: absolute;
+    width: 90px;
+    height: 12px;
+    bottom: calc(1em + 15px); /* sitting on top of desk */
+    left: 330px;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: red;
+  }
+  .book-two {
+    position: absolute;
+    width: 85px;
+    height: 20px;
+    bottom: calc(1em + 15px + 12px); /* sitting on top of book-one */
+    left: 335px;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: blue;
+  }
 }
