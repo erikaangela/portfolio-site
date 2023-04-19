@@ -7,27 +7,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .keyboard-grid {
-    h1 {
-      font-size: abstracts.$h1-size;
-      color: gray;
-      padding: 0 40px 10px 5px;
-      border-radius: 5px;
-      background: linear-gradient(white, gray);
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
-        10px 10px 10px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1),
-        20px 20px 20px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  // .hero-title {
-  //   font-size: abstracts.$h1-size;
-  //   letter-spacing: abstracts.$letter-spacing;
-  // }
-
-  // .hero-subtitle {
-  //   font-size: abstracts.$h3-size;
-  //   letter-spacing: abstracts.$letter-spacing;
-  // }
 }
