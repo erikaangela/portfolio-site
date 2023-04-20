@@ -9,6 +9,11 @@ To read about my process building this, click for [this](https://medium.com/@eri
 - CSS - _SASS/SCSS, Flexbox, Grid_
 - JavaScript
 
+**Design inspiration from**
+[José Rosário](https://codepen.io/JoseRosario/pen/wpxGeE)<br>
+[Motionblurstudios](https://dribbble.com/shots/14217573-Wine-tasting-conclusion)<br>
+[Valentin Kirilov](https://dribbble.com/shots/3124841-Citibank-Spot-Animations-Coffee)
+
 ### Contact
 
 **mana.erikaa@gmail.com**<br>
