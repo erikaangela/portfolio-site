@@ -129,8 +129,8 @@ nav .hamburger .bar {
 .header-section .desk {
   position: absolute;
   width: 40%;
-  height: 15px;
-  bottom: 1em;
+  height: 12px;
+  bottom: calc(1em + 3px); /* accomodates for change to thinner desk width */
   background-color: grey;
   border-radius: 1em;
 }
@@ -143,6 +143,15 @@ nav .hamburger .bar {
   border-top: 4px solid hsl(217, 45%, 15%);
   border-radius: 0.5em 0.5em 0 0;
   z-index: 1;
+}
+.header-section .laptop .dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 10px;
+  top: 9px;
+  background-color: red;
+  border-radius: 50%;
 }
 .header-section .book-one {
   position: absolute;
