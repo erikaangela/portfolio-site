@@ -77,22 +77,23 @@
     border-radius: 0.1em;
   }
 
-  .girl {
+  .face {
     position: absolute;
     width: 78px;
-    height: 65px;
+    height: 75px;
     bottom: 130px;
     border-radius: 0 0 50px 50px;
-    border-style: inset;
     border: 6px solid #f6d2be;
-    border-top: none;
+    // box-shadow: 0 -20px 0 15px red; /* headband option */
+    border-top: 10px solid #f6d2be;
+    border-top-style: outset;
     background-color: #fddac5;
 
     .eye {
       position: absolute;
       width: 12px;
       height: 12px;
-      bottom: 23px;
+      bottom: 21px;
       left: 9px;
       border-radius: 50%;
       background-color: rgb(86, 33, 33);
@@ -107,8 +108,8 @@
       position: absolute;
       width: 6px;
       height: 14px;
-      bottom: 12px;
-      left: 30px;
+      bottom: 13px;
+      left: 29.5px;
       border-radius: 20px;
       background-color: #efc2a3;
     }
@@ -124,12 +125,13 @@
 
     .hair-top {
       position: absolute;
-      width: 95px;
-      height: 40px;
-      background-color: aquamarine;
+      width: 76px;
+      height: 35px;
+      background-color: transparent;
       border-radius: 10rem 10rem 0 0;
-      left: -14px;
-      bottom: 59px;
+      box-shadow: 0 -15px 0 10px aquamarine;
+      left: -5px;
+      bottom: 40px;
     }
 
     .hair-left {
@@ -139,9 +141,9 @@
       border-bottom: thick double aqua;
       border-radius: 50%;
       background-color: aquamarine;
-      transform: rotate(-50deg);
-      right: 12px;
-      bottom: 47px;
+      transform: rotate(-60deg);
+      right: 17px;
+      bottom: 44px;
     }
 
     .hair-right {
@@ -151,9 +153,9 @@
       border-bottom: thick double aqua;
       border-radius: 50%;
       background-color: aquamarine;
-      transform: rotate(45deg);
-      left: 14px;
-      bottom: 48px;
+      transform: rotate(65deg);
+      left: 19px;
+      bottom: 46px;
     }
   }
 
@@ -195,7 +197,7 @@
       height: 10px;
       left: 6px;
       border-radius: 45%;
-      background-color: grey;
+      background-color: hotpink;
       z-index: -1;
     }
 
