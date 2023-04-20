@@ -114,12 +114,12 @@
 
     .hair-top {
       position: absolute;
-      width: 96px;
-      height: 37px;
+      width: 95px;
+      height: 40px;
       background-color: aquamarine;
       border-radius: 10rem 10rem 0 0;
-      left: -15px;
-      bottom: 61px;
+      left: -14px;
+      bottom: 59px;
     }
 
     .hair-left {
@@ -129,8 +129,8 @@
       border-bottom: thick double aqua;
       border-radius: 50%;
       background-color: aquamarine;
-      transform: rotate(-45deg);
-      right: 15px;
+      transform: rotate(-50deg);
+      right: 12px;
       bottom: 47px;
     }
 
@@ -141,9 +141,42 @@
       border-bottom: thick double aqua;
       border-radius: 50%;
       background-color: aquamarine;
-      transform: rotate(38deg);
-      left: 20px;
+      transform: rotate(45deg);
+      left: 14px;
       bottom: 48px;
+    }
+  }
+
+  .cup {
+    position: absolute;
+    width: 43px;
+    height: 25px;
+    right: 380px;
+    bottom: calc(1em + 15px); /* sitting on top of desk */
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 48px solid blueviolet;
+
+    .lid {
+      position: absolute;
+      width: 47px;
+      height: 7px;
+      right: -9px;
+      bottom: 43px;
+      background-color: blue;
+      border-radius: 1em;
+      border-bottom: thin double aqua;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      right: -2px;
+      bottom: 3px;
+      border-top: 35px solid aqua;
+      border-left: 0 solid transparent;
+      border-right: 5px solid transparent;
     }
   }
 }
