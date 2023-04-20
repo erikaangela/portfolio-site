@@ -193,20 +193,19 @@
       position: absolute;
       width: 20px;
       height: 10px;
-      bottom: 15px;
       left: 6px;
       border-radius: 45%;
-      // background-color: red;
+      background-color: grey;
       z-index: -1;
     }
 
     .steam-one {
       animation: steam-style-one 3.5s ease-out infinite;
-      background-color: red;
+      bottom: 15px;
     }
     .steam-three {
       animation: steam-style-one 3.5s ease-out 1s infinite;
-      background-color: orange;
+      bottom: 25px;
     }
     @keyframes steam-style-one {
       from {
@@ -214,18 +213,18 @@
         opacity: 0.25;
       }
       to {
-        transform: translateY(-65px) translateX(-5px) scale(1);
+        transform: translateY(-65px) translateX(-5px) scale(1.5);
         opacity: 0;
       }
     }
 
     .steam-two {
       animation: steam-style-two 3.5s ease-out 0.5s infinite;
-      background-color: blue;
+      bottom: 20px;
     }
     .steam-four {
       animation: steam-style-two 3.5s ease-out 1.5s infinite;
-      background-color: blueviolet;
+      bottom: 30px;
     }
     @keyframes steam-style-two {
       from {
