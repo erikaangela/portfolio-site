@@ -4,7 +4,7 @@
   @include abstracts.section-align();
   margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
   margin-bottom: 8rem;
-  padding: 8rem 0;
+  padding: 11rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +112,16 @@
       z-index: -3;
     }
 
+    .hair-top {
+      position: absolute;
+      width: 96px;
+      height: 37px;
+      background-color: aquamarine;
+      border-radius: 10rem 10rem 0 0;
+      left: -15px;
+      bottom: 61px;
+    }
+
     .hair-left {
       position: absolute;
       width: 77px;
@@ -126,14 +136,14 @@
 
     .hair-right {
       position: absolute;
-      width: 70px;
-      height: 35px;
+      width: 72px;
+      height: 36px;
       border-bottom: thick double aqua;
       border-radius: 50%;
       background-color: aquamarine;
-      transform: rotate(34deg);
+      transform: rotate(38deg);
       left: 20px;
-      bottom: 47px;
+      bottom: 48px;
     }
   }
 }
