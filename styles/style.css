@@ -270,6 +270,16 @@ nav .hamburger .bar {
   border-right: 7px solid transparent;
   border-top: 48px solid blueviolet;
 }
+.header-section .cup:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  right: -2px;
+  bottom: 3px;
+  border-top: 35px solid aqua;
+  border-left: 0 solid transparent;
+  border-right: 5px solid transparent;
+}
 .header-section .cup .lid {
   position: absolute;
   width: 47px;
@@ -280,15 +290,50 @@ nav .hamburger .bar {
   border-radius: 1em;
   border-bottom: thin double aqua;
 }
-.header-section .cup:after {
-  content: "";
+.header-section .cup [class*=steam-] {
   position: absolute;
-  width: 8px;
-  right: -2px;
-  bottom: 3px;
-  border-top: 35px solid aqua;
-  border-left: 0 solid transparent;
-  border-right: 5px solid transparent;
+  width: 20px;
+  height: 10px;
+  bottom: 15px;
+  left: 6px;
+  border-radius: 45%;
+  z-index: -1;
+}
+.header-section .cup .steam-one {
+  animation: steam-style-one 3.5s ease-out infinite;
+  background-color: red;
+}
+.header-section .cup .steam-three {
+  animation: steam-style-one 3.5s ease-out 1s infinite;
+  background-color: orange;
+}
+@keyframes steam-style-one {
+  from {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(-65px) translateX(-5px) scale(1);
+    opacity: 0;
+  }
+}
+.header-section .cup .steam-two {
+  animation: steam-style-two 3.5s ease-out 0.5s infinite;
+  background-color: blue;
+}
+.header-section .cup .steam-four {
+  animation: steam-style-two 3.5s ease-out 1.5s infinite;
+  background-color: blueviolet;
+}
+@keyframes steam-style-two {
+  from {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(-65px) translateX(10px) scale(1);
+    opacity: 0;
+  }
 }
 
 .diagonal {
