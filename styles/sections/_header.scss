@@ -12,10 +12,10 @@
 
   .desk {
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 15px;
     bottom: 1em;
-    background-color: hsl(23, 54%, 14%);
+    background-color: grey;
     border-radius: 1em;
   }
 
@@ -27,24 +27,113 @@
     background-color: abstracts.$clr-text;
     border-top: 4px solid abstracts.$clr-secondary;
     border-radius: 0.5em 0.5em 0 0;
+    z-index: 1;
   }
 
   .book-one {
     position: absolute;
-    width: 90px;
+    width: 70px;
     height: 12px;
     bottom: calc(1em + 15px); /* sitting on top of desk */
-    left: 330px;
+    left: 360px;
+    border-style: inset;
+    border: 2.5px solid orange;
+    border-left: 0;
+    border-right: 6px solid orange;
     border-radius: 0 0.5em 0.5em 0;
-    background-color: red;
+    background-color: hsl(0, 0%, 96%);
   }
   .book-two {
     position: absolute;
-    width: 85px;
+    width: 70px;
     height: 20px;
     bottom: calc(1em + 15px + 12px); /* sitting on top of book-one */
-    left: 335px;
+    left: 365px;
+    border-style: inset;
+    border: 4px solid blueviolet;
+    border-right: 10px solid blueviolet;
+    border-left: 0;
     border-radius: 0 0.5em 0.5em 0;
-    background-color: blue;
+    background-color: hsl(0, 0%, 96%);
+  }
+
+  .phone {
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    bottom: calc(1em + 15px + 12px + 20px); /* sitting on top of book-two */
+    left: 370px;
+    background-color: green;
+    border-radius: 0.1em;
+  }
+
+  .girl {
+    position: absolute;
+    width: 78px;
+    height: 65px;
+    bottom: 130px;
+    border-radius: 0 0 50px 50px;
+    border-style: inset;
+    border: 6px solid #f6d2be;
+    border-top: none;
+    background-color: #fddac5;
+
+    .eye {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      bottom: 23px;
+      left: 9px;
+      border-radius: 50%;
+      background-color: rgb(86, 33, 33);
+
+      &:nth-child(2) {
+        left: auto;
+        right: 9px;
+      }
+    }
+
+    .nose {
+      position: absolute;
+      width: 6px;
+      height: 14px;
+      bottom: 12px;
+      left: 30px;
+      border-radius: 20px;
+      background-color: #efc2a3;
+    }
+
+    .hair {
+      position: absolute;
+      width: 95px;
+      height: 60px;
+      left: -14px;
+      background-color: aquamarine;
+      z-index: -3;
+    }
+
+    .hair-left {
+      position: absolute;
+      width: 77px;
+      height: 38.5px;
+      border-bottom: thick double aqua;
+      border-radius: 50%;
+      background-color: aquamarine;
+      transform: rotate(-45deg);
+      right: 15px;
+      bottom: 47px;
+    }
+
+    .hair-right {
+      position: absolute;
+      width: 70px;
+      height: 35px;
+      border-bottom: thick double aqua;
+      border-radius: 50%;
+      background-color: aquamarine;
+      transform: rotate(34deg);
+      left: 20px;
+      bottom: 47px;
+    }
   }
 }
