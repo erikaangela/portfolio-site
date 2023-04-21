@@ -22,6 +22,35 @@
         border-radius: 0 0 5rem 5rem;
       }
     }
+
+    .switch {
+      .light {
+        button {
+          background-color: hsl(240, 4%, 30%);
+          border-radius: 0.15em;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            background-color: hsl(240, 4%, 65%);
+            border-radius: 0.15em 0.15em 0 0;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 10px;
+            background-color: hsl(240, 4%, 80%);
+            border-radius: 0 0 0.15em 0.15em;
+          }
+        }
+      }
+    }
   }
 
   .diagonal {
