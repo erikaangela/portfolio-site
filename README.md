@@ -13,6 +13,7 @@ To read about my process building this, click for [this](https://medium.com/@eri
 [José Rosário](https://codepen.io/JoseRosario/pen/wpxGeE)<br>
 [Motionblurstudios](https://dribbble.com/shots/14217573-Wine-tasting-conclusion)<br>
 [Valentin Kirilov](https://dribbble.com/shots/3124841-Citibank-Spot-Animations-Coffee)
+[light switch design](https://www.123rf.com/photo_178872484_light-switch-clip-art-vector-illustration.html?vti=o8iv2bekohrr33lgnb-1-84)
 
 ### Contact
 
