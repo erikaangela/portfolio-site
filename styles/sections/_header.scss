@@ -262,5 +262,45 @@
     .screw-two {
       top: 39px;
     }
+
+    .light {
+      position: absolute;
+      width: 15px;
+      height: 26px;
+      left: 18px;
+      top: 10px;
+      background-color: pink;
+      border-radius: 0.1em;
+
+      .button {
+        position: absolute;
+        width: 10px;
+        height: 20px;
+        left: 2.5px;
+        top: 3px;
+        background-color: blue;
+        border-radius: 0.1em;
+        display: flex;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: green;
+          border-radius: 0.1em 0.1em 0 0;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 7px;
+          top: 10px;
+          background-color: purple;
+          border-radius: 0 0 0.1em 0.1em;
+        }
+      }
+    }
   }
 }
