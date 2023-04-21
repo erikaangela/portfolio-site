@@ -15,7 +15,7 @@
 }
 
 .darkMode {
-  @include darkMode();
+  @include abstracts.darkMode();
 }
 
 body,

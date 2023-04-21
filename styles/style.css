@@ -1,5 +1,18 @@
+/* Collects into one file to distribute all as one file when used
+as opposed to @use whose variables are only available in the file they are
+used in */
+*, *::after, ::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* For ease in setting padding */
+  scroll-behavior: smooth;
+}
 .darkMode {
   background-color: hsl(217, 45%, 15%);
+}
+.darkMode .header-section .face .eye {
+  height: 10px;
+  border-radius: 0 0 5rem 5rem;
 }
 .darkMode .diagonal:after {
   background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
@@ -48,15 +61,6 @@
   color: hsl(276, 33%, 97%);
 }
 
-/* Collects into one file to distribute all as one file when used
-as opposed to @use whose variables are only available in the file they are
-used in */
-*, *::after, ::after, *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; /* For ease in setting padding */
-  scroll-behavior: smooth;
-}
 body,
 .btn {
   font-family: "Source Sans Pro", sans-serif;
@@ -181,7 +185,7 @@ nav .hamburger .bar {
   width: 40%;
   height: 12px;
   bottom: calc(1em + 3px); /* accomodates for change to thinner desk width */
-  background-color: grey;
+  background-color: #e2d3cd;
   border-radius: 1em;
 }
 .header-section .laptop {
@@ -200,7 +204,7 @@ nav .hamburger .bar {
   height: 6px;
   left: 10px;
   top: 9px;
-  background-color: red;
+  background-color: hsl(0, 100%, 37%);
   border-radius: 50%;
 }
 .header-section .book-one {
@@ -210,11 +214,11 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px); /* sitting on top of desk */
   left: 360px;
   border-style: inset;
-  border: 2.5px solid yellowgreen;
+  border: 2.5px solid hsl(49, 92%, 45%);
   border-left: 0;
-  border-right: 6px solid yellowgreen;
+  border-right: 6px solid hsl(49, 92%, 72%);
   border-radius: 0 0.5em 0.5em 0;
-  background-color: hsl(0, 0%, 96%);
+  background-color: #f9f9f3;
 }
 .header-section .book-two {
   position: absolute;
@@ -223,11 +227,11 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px + 12px); /* sitting on top of book-one */
   left: 365px;
   border-style: inset;
-  border: 4px solid lightblue;
-  border-right: 10px solid lightblue;
+  border: 4px solid hsl(201, 75%, 43%);
+  border-right: 10px solid hsl(201, 75%, 70%);
   border-left: 0;
   border-radius: 0 0.5em 0.5em 0;
-  background-color: hsl(0, 0%, 96%);
+  background-color: #f9f9f3;
 }
 .header-section .phone {
   position: absolute;
@@ -235,7 +239,7 @@ nav .hamburger .bar {
   height: 6px;
   bottom: calc(1em + 15px + 12px + 20px); /* sitting on top of book-two */
   left: 370px;
-  background-color: green;
+  background-color: hsl(240, 4%, 16%);
   border-radius: 0.1em;
 }
 .header-section .face {
@@ -244,10 +248,10 @@ nav .hamburger .bar {
   height: 75px;
   bottom: 130px;
   border-radius: 0 0 50px 50px;
-  border: 6px solid #f6d2be;
-  border-top: 10px solid #f6d2be;
+  border: 6px solid hsl(21, 76%, 82%);
+  border-top: 10px solid hsl(21, 76%, 85%);
   border-top-style: outset;
-  background-color: #fddac5;
+  background-color: hsl(22, 93%, 88%);
 }
 .header-section .face .eye {
   position: absolute;
@@ -256,7 +260,7 @@ nav .hamburger .bar {
   bottom: 21px;
   left: 9px;
   border-radius: 50%;
-  background-color: rgb(86, 33, 33);
+  background-color: hsl(17, 23%, 26%);
 }
 .header-section .face .eye:nth-child(2) {
   left: auto;
@@ -269,14 +273,14 @@ nav .hamburger .bar {
   bottom: 13px;
   left: 29.5px;
   border-radius: 20px;
-  background-color: #efc2a3;
+  background-color: hsl(24, 70%, 79%);
 }
 .header-section .face .hair {
   position: absolute;
   width: 95px;
   height: 60px;
   left: -14px;
-  background-color: aquamarine;
+  background-color: #18110e;
   z-index: -3;
 }
 .header-section .face .hair-top {
@@ -285,7 +289,7 @@ nav .hamburger .bar {
   height: 35px;
   background-color: transparent;
   border-radius: 10rem 10rem 0 0;
-  box-shadow: 0 -15px 0 10px aquamarine;
+  box-shadow: 0 -15px 0 10px hsl(18, 26%, 7%);
   left: -5px;
   bottom: 40px;
 }
@@ -293,9 +297,9 @@ nav .hamburger .bar {
   position: absolute;
   width: 77px;
   height: 38.5px;
-  border-bottom: thick double aqua;
+  border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
-  background-color: aquamarine;
+  background-color: hsl(18, 50%, 7%);
   transform: rotate(-60deg);
   right: 17px;
   bottom: 44px;
@@ -304,9 +308,9 @@ nav .hamburger .bar {
   position: absolute;
   width: 72px;
   height: 36px;
-  border-bottom: thick double aqua;
+  border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
-  background-color: aquamarine;
+  background-color: hsl(18, 50%, 7%);
   transform: rotate(65deg);
   left: 19px;
   bottom: 46px;
@@ -319,7 +323,7 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px); /* sitting on top of desk */
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 48px solid blueviolet;
+  border-top: 48px solid hsl(28, 18%, 86%);
 }
 .header-section .cup:after {
   content: "";
@@ -327,7 +331,7 @@ nav .hamburger .bar {
   width: 8px;
   right: -2px;
   bottom: 3px;
-  border-top: 35px solid aqua;
+  border-top: 35px solid hsl(28, 18%, 94%);
   border-left: 0 solid transparent;
   border-right: 5px solid transparent;
 }
@@ -337,9 +341,9 @@ nav .hamburger .bar {
   height: 7px;
   right: -9px;
   bottom: 43px;
-  background-color: blue;
+  background-color: hsl(28, 18%, 86%);
   border-radius: 1em;
-  border-bottom: thin double aqua;
+  border-bottom: thin double hsl(28, 18%, 94%);
 }
 .header-section .cup [class*=steam-] {
   position: absolute;
@@ -347,7 +351,7 @@ nav .hamburger .bar {
   height: 10px;
   left: 6px;
   border-radius: 45%;
-  background-color: hotpink;
+  background-color: #f5f5f5;
   z-index: -1;
 }
 .header-section .cup .steam-one {
@@ -392,14 +396,14 @@ nav .hamburger .bar {
   height: 47px;
   right: 300px;
   border-radius: 0.3em;
-  background-color: red;
+  background-color: hsl(21, 20%, 86%);
 }
 .header-section .switch [class*=screw-] {
   position: absolute;
   width: 5px;
   height: 5px;
   left: 23px;
-  background-color: blue;
+  background-color: hsl(240, 4%, 16%);
   border-radius: 50%;
 }
 .header-section .switch .screw-one {
@@ -414,7 +418,7 @@ nav .hamburger .bar {
   height: 26px;
   left: 18px;
   top: 10px;
-  background-color: pink;
+  background-color: hsl(28, 18%, 94%);
   border-radius: 0.1em;
 }
 .header-section .switch .light button {
