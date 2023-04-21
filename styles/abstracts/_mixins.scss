@@ -11,3 +11,92 @@
   margin: variables.$section-margin;
   text-align: center;
 }
+
+@mixin darkMode {
+  background-color: variables.$clr-secondary;
+
+  .diagonal {
+    &:after {
+      background: linear-gradient(
+        109.6deg,
+        rgb(20, 30, 48) 11.2%,
+        rgb(36, 59, 85) 91.1%
+      );
+    }
+  }
+
+  .about-section {
+    .header {
+      color: variables.$clr-primary;
+    }
+
+    .body {
+      .bio {
+        color: variables.$clr-primary;
+      }
+    }
+  }
+
+  .skills-section {
+    .header {
+      color: variables.$clr-primary;
+    }
+
+    .skills-grid {
+      .skill {
+        color: variables.$clr-primary;
+      }
+    }
+  }
+
+  .projects-section {
+    .header {
+      color: variables.$clr-primary;
+    }
+
+    > {
+      a {
+        color: variables.$clr-primary;
+      }
+    }
+
+    .card-grid {
+      .card {
+        background-color: variables.$clr-secondary;
+        border: 3px solid variables.$clr-primary;
+        box-shadow: 8px 8px variables.$clr-primary;
+
+        .card-title {
+          color: variables.$clr-primary;
+        }
+
+        .card-body {
+          color: variables.$clr-primary;
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    .header {
+      color: variables.$clr-primary;
+    }
+
+    .email {
+      color: variables.$clr-primary;
+
+      border: 3px solid variables.$clr-primary;
+      box-shadow: 6px 6px variables.$clr-primary;
+    }
+
+    .contact-form {
+      label {
+        color: variables.$clr-primary;
+      }
+    }
+  }
+
+  .creator {
+    color: variables.$clr-primary;
+  }
+}

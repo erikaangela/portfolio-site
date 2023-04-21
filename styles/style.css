@@ -1,3 +1,53 @@
+.darkMode {
+  background-color: hsl(217, 45%, 15%);
+}
+.darkMode .diagonal:after {
+  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+}
+.darkMode .about-section .header {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .about-section .body .bio {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .skills-section .header {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .skills-section .skills-grid .skill {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .projects-section .header {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .projects-section > a {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .projects-section .card-grid .card {
+  background-color: hsl(217, 45%, 15%);
+  border: 3px solid hsl(276, 33%, 97%);
+  box-shadow: 8px 8px hsl(276, 33%, 97%);
+}
+.darkMode .projects-section .card-grid .card .card-title {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .projects-section .card-grid .card .card-body {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .contact-section .header {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .contact-section .email {
+  color: hsl(276, 33%, 97%);
+  border: 3px solid hsl(276, 33%, 97%);
+  box-shadow: 6px 6px hsl(276, 33%, 97%);
+}
+.darkMode .contact-section .contact-form label {
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .creator {
+  color: hsl(276, 33%, 97%);
+}
+
 /* Collects into one file to distribute all as one file when used
 as opposed to @use whose variables are only available in the file they are
 used in */
@@ -160,9 +210,9 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px); /* sitting on top of desk */
   left: 360px;
   border-style: inset;
-  border: 2.5px solid orange;
+  border: 2.5px solid yellowgreen;
   border-left: 0;
-  border-right: 6px solid orange;
+  border-right: 6px solid yellowgreen;
   border-radius: 0 0.5em 0.5em 0;
   background-color: hsl(0, 0%, 96%);
 }
@@ -173,8 +223,8 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px + 12px); /* sitting on top of book-one */
   left: 365px;
   border-style: inset;
-  border: 4px solid blueviolet;
-  border-right: 10px solid blueviolet;
+  border: 4px solid lightblue;
+  border-right: 10px solid lightblue;
   border-left: 0;
   border-radius: 0 0.5em 0.5em 0;
   background-color: hsl(0, 0%, 96%);
@@ -367,17 +417,18 @@ nav .hamburger .bar {
   background-color: pink;
   border-radius: 0.1em;
 }
-.header-section .switch .light .button {
+.header-section .switch .light button {
   position: absolute;
   width: 10px;
   height: 20px;
   left: 2.5px;
   top: 3px;
   background-color: blue;
+  border: 0;
   border-radius: 0.1em;
   display: flex;
 }
-.header-section .switch .light .button:before {
+.header-section .switch .light button:before {
   content: "";
   position: absolute;
   width: 10px;
@@ -385,7 +436,7 @@ nav .hamburger .bar {
   background-color: green;
   border-radius: 0.1em 0.1em 0 0;
 }
-.header-section .switch .light .button:after {
+.header-section .switch .light button:after {
   content: "";
   position: absolute;
   width: 10px;
@@ -401,7 +452,7 @@ nav .hamburger .bar {
   padding-block: 1.5rem 2.5rem;
 }
 
-.diagonal::after {
+.diagonal:after {
   content: "";
   background: linear-gradient(hsl(224, 33%, 90%), hsl(224, 33%, 83%), hsl(224, 33%, 75%));
   position: absolute; /* Pseudo element living in .diagonal so is 

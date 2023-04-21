@@ -14,6 +14,10 @@
   }
 }
 
+.darkMode {
+  @include darkMode();
+}
+
 body,
 .btn {
   font-family: abstracts.$font-family;

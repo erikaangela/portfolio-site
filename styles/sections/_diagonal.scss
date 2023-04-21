@@ -4,16 +4,18 @@
   padding-block: 1.5rem 2.5rem;
 }
 
-.diagonal::after {
-  content: "";
-  background: linear-gradient(
-    hsl(224, 33%, 90%),
-    hsl(224, 33%, 83%),
-    hsl(224, 33%, 75%)
-  );
-  position: absolute; /* Pseudo element living in .diagonal so is 
+.diagonal {
+  &:after {
+    content: "";
+    background: linear-gradient(
+      hsl(224, 33%, 90%),
+      hsl(224, 33%, 83%),
+      hsl(224, 33%, 75%)
+    );
+    position: absolute; /* Pseudo element living in .diagonal so is 
     position is relative to .diagonal's relative position, which keeps it in the flow */
-  z-index: -1;
-  inset: 0; /* Shorthand for top bottom left right */
-  transform: skewY(5.5deg);
+    z-index: -1;
+    inset: 0; /* Shorthand for top bottom left right */
+    transform: skewY(5.5deg);
+  }
 }
