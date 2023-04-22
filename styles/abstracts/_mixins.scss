@@ -16,10 +16,20 @@
   background-color: variables.$clr-secondary;
 
   .header-section {
+    .wall {
+      background-color: hsl(43, 31%, 79%);
+    }
+
     .face {
       .eye {
         height: 10px;
         border-radius: 0 0 5rem 5rem;
+      }
+    }
+
+    .cup {
+      [class*="steam-"] {
+        background-color: hsl(0, 0%, 50%);
       }
     }
 
