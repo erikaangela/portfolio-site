@@ -29,6 +29,13 @@
     border-radius: 1em;
   }
 
+  @keyframes blink {
+    to {
+      background-color: transparent;
+      border: transparent;
+    }
+  }
+
   .laptop {
     position: absolute;
     width: 175px;
@@ -47,6 +54,7 @@
       top: 9px;
       background-color: hsl(0, 100%, 37%);
       border-radius: 50%;
+      animation: blink 1s infinite;
     }
   }
 
@@ -77,13 +85,6 @@
     background-color: hsl(60, 33%, 96%);
   }
 
-  @keyframes blink {
-    to {
-      background-color: transparent;
-      border: transparent;
-    }
-  }
-
   .message {
     position: absolute;
     font-size: 0.75rem;
@@ -92,6 +93,7 @@
     left: 320px;
     bottom: 105px;
     transform: rotate(-15deg);
+    color: abstracts.$clr-secondary;
   }
 
   .phone {

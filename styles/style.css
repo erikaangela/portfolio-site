@@ -228,6 +228,12 @@ nav .hamburger .bar {
   background-color: #e2d3cd;
   border-radius: 1em;
 }
+@keyframes blink {
+  to {
+    background-color: transparent;
+    border: transparent;
+  }
+}
 .header-section .laptop {
   position: absolute;
   width: 175px;
@@ -246,6 +252,7 @@ nav .hamburger .bar {
   top: 9px;
   background-color: hsl(0, 100%, 37%);
   border-radius: 50%;
+  animation: blink 1s infinite;
 }
 .header-section .book-one {
   position: absolute;
@@ -273,12 +280,6 @@ nav .hamburger .bar {
   border-radius: 0 0.5em 0.5em 0;
   background-color: hsl(60, 33%, 96%);
 }
-@keyframes blink {
-  to {
-    background-color: transparent;
-    border: transparent;
-  }
-}
 .header-section .message {
   position: absolute;
   font-size: 0.75rem;
@@ -287,6 +288,7 @@ nav .hamburger .bar {
   left: 320px;
   bottom: 105px;
   transform: rotate(-15deg);
+  color: hsl(217, 45%, 15%);
 }
 .header-section .phone {
   position: absolute;
