@@ -13,6 +13,9 @@ used in */
 .darkMode .header-section .wall {
   background-color: hsl(43, 31%, 79%);
 }
+.darkMode .header-section .message {
+  color: white;
+}
 .darkMode .header-section .face .eye {
   height: 10px;
   border-radius: 0 0 5rem 5rem;
@@ -268,7 +271,16 @@ nav .hamburger .bar {
   border-right: 10px solid hsl(201, 75%, 60%);
   border-left: 0;
   border-radius: 0 0.5em 0.5em 0;
-  background-color: #f9f9f3;
+  background-color: hsl(60, 33%, 96%);
+}
+.header-section .message {
+  position: absolute;
+  font-size: 0.75rem;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  left: 320px;
+  bottom: 105px;
+  transform: rotate(-15deg);
 }
 .header-section .phone {
   position: absolute;
@@ -292,7 +304,8 @@ nav .hamburger .bar {
   height: 12px;
   top: 12px;
   border-radius: 1em;
-  background-color: #fce205;
+  border: 1px solid hsl(54, 98%, 43%);
+  background-color: hsl(54, 98%, 50%);
   transform: skew(30deg);
 }
 .header-section .phone .rings .ring:nth-of-type(2) {

@@ -74,7 +74,17 @@
     border-right: 10px solid hsl(201, 75%, 60%);
     border-left: 0;
     border-radius: 0 0.5em 0.5em 0;
-    background-color: #f9f9f3;
+    background-color: hsl(60, 33%, 96%);
+  }
+
+  .message {
+    position: absolute;
+    font-size: 0.75rem;
+    font-family: "Roboto Mono", monospace;
+    text-decoration: none;
+    left: 320px;
+    bottom: 105px;
+    transform: rotate(-15deg);
   }
 
   .phone {
@@ -99,7 +109,8 @@
         height: 12px;
         top: 12px;
         border-radius: 1em;
-        background-color: #fce205;
+        border: 1px solid hsl(54, 98%, 43%);
+        background-color: hsl(54, 98%, 50%);
         transform: skew(30deg);
 
         &:nth-of-type(2) {
