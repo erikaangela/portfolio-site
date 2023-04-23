@@ -231,19 +231,20 @@
       width: 95px;
       height: 60px;
       left: -14.5px;
+      border-radius: 5rem 5rem 0 0;
       background-color: #18110e;
       z-index: -3;
     }
 
     .hair-top {
       position: absolute;
-      width: 76px;
-      height: 35px;
+      width: 75px;
+      height: 40px;
       background-color: transparent;
       border-radius: 10rem 10rem 1rem 1rem;
       box-shadow: 0 -15px 0 10px hsl(18, 26%, 7%);
-      left: -5px;
-      bottom: 40px;
+      left: -4.5px;
+      bottom: 33px;
     }
 
     .hair-left {
@@ -266,7 +267,7 @@
       border-radius: 50%;
       background-color: hsl(18, 50%, 7%);
       transform: rotate(45deg);
-      left: 25px;
+      left: 28px;
       bottom: 46px;
     }
   }
