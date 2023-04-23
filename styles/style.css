@@ -14,7 +14,13 @@ used in */
   background-color: hsl(43, 31%, 79%);
 }
 .darkMode .header-section .message {
-  color: white;
+  color: hsl(276, 33%, 97%);
+}
+.darkMode .header-section .message:before {
+  background-color: hsl(217, 45%, 15%);
+}
+.darkMode .header-section .message:after {
+  background-color: hsl(276, 33%, 97%);
 }
 .darkMode .header-section .face .eye {
   height: 10px;
@@ -252,7 +258,6 @@ nav .hamburger .bar {
   top: 9px;
   background-color: hsl(0, 100%, 37%);
   border-radius: 50%;
-  animation: blink 1s infinite;
 }
 .header-section .book-one {
   position: absolute;
@@ -282,13 +287,42 @@ nav .hamburger .bar {
 }
 .header-section .message {
   position: absolute;
-  font-size: 0.75rem;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1rem;
+  letter-spacing: 2px;
   font-family: "Roboto Mono", monospace;
   text-decoration: none;
-  left: 320px;
-  bottom: 105px;
-  transform: rotate(-15deg);
+  left: 235px;
+  bottom: 100px;
+  transform: rotate(-20deg);
   color: hsl(217, 45%, 15%);
+}
+.header-section .message:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: hsl(276, 33%, 97%);
+  animation: texting 7s steps(10) forwards infinite;
+}
+.header-section .message:after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 0.125em;
+  background-color: hsl(240, 4%, 16%);
+  animation: texting 7s steps(10) forwards infinite;
+}
+@keyframes texting {
+  0% {
+    left: 0%;
+  }
+  14% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
 .header-section .phone {
   position: absolute;
@@ -315,7 +349,7 @@ nav .hamburger .bar {
   border: 1px solid hsl(54, 98%, 43%);
   background-color: hsl(54, 98%, 50%);
   transform: skew(30deg);
-  animation: blink 900ms infinite;
+  animation: blink 600ms infinite;
 }
 .header-section .phone .rings .ring:nth-of-type(2) {
   height: 14px;

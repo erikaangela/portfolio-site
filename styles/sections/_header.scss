@@ -54,7 +54,6 @@
       top: 9px;
       background-color: hsl(0, 100%, 37%);
       border-radius: 50%;
-      animation: blink 1s infinite;
     }
   }
 
@@ -87,13 +86,43 @@
 
   .message {
     position: absolute;
-    font-size: 0.75rem;
+    width: max-content;
+    font-size: 1rem;
+    letter-spacing: 2px;
     font-family: "Roboto Mono", monospace;
     text-decoration: none;
-    left: 320px;
-    bottom: 105px;
-    transform: rotate(-15deg);
+    left: 235px;
+    bottom: 100px;
+    transform: rotate(-20deg);
     color: abstracts.$clr-secondary;
+
+    &:before {
+      content: "";
+      position: absolute;
+      inset: 0 0 0 0;
+      background-color: abstracts.$clr-primary;
+      animation: texting 7s steps(10) forwards infinite;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0 0 0 0;
+      width: 0.125em;
+      background-color: abstracts.$clr-text;
+      animation: texting 7s steps(10) forwards infinite;
+    }
+  }
+
+  @keyframes texting {
+    0% {
+      left: 0%;
+    }
+    14% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 
   .phone {
@@ -121,7 +150,7 @@
         border: 1px solid hsl(54, 98%, 43%);
         background-color: hsl(54, 98%, 50%);
         transform: skew(30deg);
-        animation: blink 900ms infinite;
+        animation: blink 600ms infinite;
 
         &:nth-of-type(2) {
           height: 14px;
