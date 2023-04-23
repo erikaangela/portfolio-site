@@ -368,7 +368,6 @@ nav .hamburger .bar {
   bottom: 130px;
   border-radius: 0 0 50px 50px;
   border: 6px solid hsl(21, 76%, 82%);
-  border-top: 10px solid hsl(21, 76%, 85%);
   border-top-style: outset;
   background-color: hsl(22, 93%, 88%);
 }
@@ -393,6 +392,27 @@ nav .hamburger .bar {
   left: 29.5px;
   border-radius: 20px;
   background-color: hsl(24, 70%, 79%);
+}
+.header-section .face .ears {
+  position: absolute;
+  width: 110px;
+  height: 30px;
+  left: -22px;
+}
+.header-section .face .ears [class*=ear-] {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  bottom: -10px;
+  border-radius: 5rem 0 0 5rem;
+  background-color: hsl(21, 76%, 82%);
+}
+.header-section .face .ears .ear-left {
+  left: 8px;
+}
+.header-section .face .ears .ear-right {
+  right: 8px;
+  border-radius: 0 5rem 5rem 0;
 }
 .header-section .face .hair {
   position: absolute;
