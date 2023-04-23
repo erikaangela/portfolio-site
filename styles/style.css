@@ -273,6 +273,12 @@ nav .hamburger .bar {
   border-radius: 0 0.5em 0.5em 0;
   background-color: hsl(60, 33%, 96%);
 }
+@keyframes blink {
+  to {
+    background-color: transparent;
+    border: transparent;
+  }
+}
 .header-section .message {
   position: absolute;
   font-size: 0.75rem;
@@ -307,6 +313,7 @@ nav .hamburger .bar {
   border: 1px solid hsl(54, 98%, 43%);
   background-color: hsl(54, 98%, 50%);
   transform: skew(30deg);
+  animation: blink 900ms infinite;
 }
 .header-section .phone .rings .ring:nth-of-type(2) {
   height: 14px;

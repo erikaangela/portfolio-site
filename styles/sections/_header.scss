@@ -77,6 +77,13 @@
     background-color: hsl(60, 33%, 96%);
   }
 
+  @keyframes blink {
+    to {
+      background-color: transparent;
+      border: transparent;
+    }
+  }
+
   .message {
     position: absolute;
     font-size: 0.75rem;
@@ -112,6 +119,7 @@
         border: 1px solid hsl(54, 98%, 43%);
         background-color: hsl(54, 98%, 50%);
         transform: skew(30deg);
+        animation: blink 900ms infinite;
 
         &:nth-of-type(2) {
           height: 14px;
