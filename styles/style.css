@@ -396,9 +396,9 @@ nav .hamburger .bar {
 }
 .header-section .face .hair {
   position: absolute;
-  width: 95px;
+  width: 96px;
   height: 60px;
-  left: -14px;
+  left: -15px;
   background-color: #18110e;
   z-index: -3;
 }
@@ -407,31 +407,31 @@ nav .hamburger .bar {
   width: 76px;
   height: 35px;
   background-color: transparent;
-  border-radius: 10rem 10rem 0 0;
+  border-radius: 10rem 10rem 1rem 1rem;
   box-shadow: 0 -15px 0 10px hsl(18, 26%, 7%);
   left: -5px;
   bottom: 40px;
 }
 .header-section .face .hair-left {
   position: absolute;
-  width: 77px;
-  height: 38.5px;
+  width: 55px;
+  height: 27.5px;
   border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
   background-color: hsl(18, 50%, 7%);
-  transform: rotate(-60deg);
-  right: 17px;
+  transform: rotate(-45deg);
+  right: 25px;
   bottom: 44px;
 }
 .header-section .face .hair-right {
   position: absolute;
-  width: 72px;
-  height: 36px;
+  width: 55px;
+  height: 27.5px;
   border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
   background-color: hsl(18, 50%, 7%);
-  transform: rotate(65deg);
-  left: 19px;
+  transform: rotate(45deg);
+  left: 25px;
   bottom: 46px;
 }
 .header-section .cup {
