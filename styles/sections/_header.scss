@@ -65,8 +65,10 @@
     left: 350px;
     border-style: inset;
     border: 2.5px solid hsl(49, 100%, 45%);
+    border: 2.5px solid hsl(141, 9%, 68%);
+
     border-left: 0;
-    border-right: 6px solid hsl(49, 100%, 56%);
+    border-right: 6px solid hsl(141, 9%, 79%);
     border-radius: 0 0.5em 0.5em 0;
     background-color: #f9f9f3;
   }
@@ -253,7 +255,7 @@
       height: 27.5px;
       border-bottom: thick double hsl(18, 26%, 25%);
       border-radius: 50%;
-      background-color: hsl(18, 50%, 7%);
+      background-color: hsl(18, 26%, 7%);
       transform: rotate(-45deg);
       right: 25px;
       bottom: 44px;
@@ -265,7 +267,7 @@
       height: 27.5px;
       border-bottom: thick double hsl(18, 26%, 25%);
       border-radius: 50%;
-      background-color: hsl(18, 50%, 7%);
+      background-color: hsl(18, 26%, 7%);
       transform: rotate(45deg);
       left: 28px;
       bottom: 46px;
