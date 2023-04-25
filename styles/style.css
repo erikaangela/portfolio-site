@@ -464,7 +464,7 @@ nav .hamburger .bar {
   bottom: calc(1em + 15px); /* sitting on top of desk */
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 48px solid hsl(28, 18%, 86%);
+  border-top: 48px solid #e79898;
 }
 .header-section .cup:after {
   content: "";
@@ -482,7 +482,7 @@ nav .hamburger .bar {
   height: 7px;
   right: -9px;
   bottom: 43px;
-  background-color: hsl(28, 18%, 86%);
+  background-color: #e79898;
   border-radius: 1em;
   border-bottom: thin double hsl(28, 18%, 94%);
 }
