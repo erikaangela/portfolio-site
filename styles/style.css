@@ -52,7 +52,7 @@ used in */
   border-radius: 0 0 0.15em 0.15em;
 }
 .darkMode .diagonal:after {
-  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+  background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
 }
 .darkMode .about-section .header {
   color: hsl(276, 33%, 97%);
@@ -328,7 +328,7 @@ nav .hamburger .bar {
   position: absolute;
   width: 50px;
   height: 6px;
-  bottom: calc(1em + 14px + 12px + 20px); /* sitting on top of book-two */
+  bottom: calc(1em + 13px + 12px + 20px); /* sitting on top of book-two */
   left: 379px;
   background-color: hsl(240, 4%, 16%);
   border-radius: 0.05em 0.05em 0.1em 0.1em;
@@ -588,6 +588,40 @@ nav .hamburger .bar {
   top: 10px;
   background-color: hsl(240, 4%, 65%);
   border-radius: 0 0 0.15em 0.15em;
+}
+@media (max-width: 768px) {
+  .header-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header-section .wall {
+    width: 80%;
+  }
+  .header-section .desk {
+    width: 90%;
+  }
+  .header-section .book-one {
+    left: 30px;
+    z-index: 1;
+  }
+  .header-section .book-two {
+    left: 50px;
+    z-index: 1;
+  }
+  .header-section .message {
+    left: 15px;
+    bottom: 315px;
+  }
+  .header-section .phone {
+    left: 59px;
+    z-index: 1;
+  }
+  .header-section .cup {
+    right: 45px;
+  }
+  .header-section .switch {
+    right: 15px;
+  }
 }
 
 .diagonal {
