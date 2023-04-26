@@ -211,14 +211,17 @@ nav .hamburger .bar {
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
   margin-bottom: 7rem;
-  padding: 11rem 0;
+  padding: 10rem 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 3rem;
   position: relative;
 }
+.header-section .title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+}
 .header-section .wall {
-  position: absolute;
   width: 35%;
   height: 85%;
   border-radius: 10rem 10rem 0 0;
@@ -228,7 +231,7 @@ nav .hamburger .bar {
 }
 .header-section .desk {
   position: absolute;
-  width: 40%;
+  width: 35%;
   height: 12px;
   bottom: calc(1em + 3px); /* accomodates for change to thinner desk width */
   background-color: #e2d3cd;
@@ -589,40 +592,6 @@ nav .hamburger .bar {
   top: 10px;
   background-color: hsl(240, 4%, 65%);
   border-radius: 0 0 0.15em 0.15em;
-}
-@media (max-width: 768px) {
-  .header-section {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .header-section .wall {
-    width: 80%;
-  }
-  .header-section .desk {
-    width: 90%;
-  }
-  .header-section .book-one {
-    left: 30px;
-    z-index: 1;
-  }
-  .header-section .book-two {
-    left: 50px;
-    z-index: 1;
-  }
-  .header-section .message {
-    left: 15px;
-    bottom: 315px;
-  }
-  .header-section .phone {
-    left: 59px;
-    z-index: 1;
-  }
-  .header-section .cup {
-    right: 45px;
-  }
-  .header-section .switch {
-    right: 15px;
-  }
 }
 
 .diagonal {
