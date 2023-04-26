@@ -16,6 +16,10 @@
   background-color: variables.$clr-secondary;
 
   .header-section {
+    .title {
+      color: variables.$clr-primary;
+    }
+
     .wall {
       background-color: hsl(43, 31%, 79%);
     }

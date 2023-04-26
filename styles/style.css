@@ -10,6 +10,9 @@ used in */
 .darkMode {
   background-color: hsl(217, 45%, 15%);
 }
+.darkMode .header-section .title {
+  color: hsl(276, 33%, 97%);
+}
 .darkMode .header-section .wall {
   background-color: hsl(43, 31%, 79%);
 }
