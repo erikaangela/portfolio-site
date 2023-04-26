@@ -379,14 +379,10 @@
       button {
         font-size: 1em;
         position: absolute;
-        width: 0.75em;
-        height: 1.35em;
-        left: 0.1em;
-        top: 0.15em;
-        // width: 0.625em;
-        // height: 1.25em;
-        // left: 0.15625em;
-        // top: 0.1875em;
+        width: 0.625em;
+        height: 1.25em;
+        left: 0.15625em;
+        top: 0.1875em;
         background-color: hsl(240, 4%, 30%);
         border: 0;
         border-radius: 0.15em;
@@ -395,8 +391,8 @@
         &:before {
           content: "";
           position: absolute;
-          width: 10px;
-          height: 10px;
+          width: 0.625em;
+          height: 0.625em;
           background-color: hsl(240, 4%, 80%);
           border-radius: 0.15em 0.15em 0 0;
         }
@@ -404,9 +400,9 @@
         &:after {
           content: "";
           position: absolute;
-          width: 10px;
-          height: 7px;
-          top: 10px;
+          width: 0.625em;
+          height: 0.4375em;
+          top: 0.625em;
           background-color: hsl(240, 4%, 65%);
           border-radius: 0 0 0.15em 0.15em;
         }

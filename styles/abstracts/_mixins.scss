@@ -37,7 +37,7 @@
 
     .face {
       .eye {
-        height: 10px;
+        height: 0.625em;
         border-radius: 0 0 5rem 5rem;
       }
     }
@@ -57,9 +57,9 @@
           &:before {
             content: "";
             position: absolute;
-            width: 10px;
-            height: 10px;
-            top: 3px;
+            width: 0.625em;
+            height: 0.625em;
+            top: 0.1875em;
             background-color: hsl(240, 4%, 65%);
             border-radius: 0.15em 0.15em 0 0;
           }
@@ -67,9 +67,9 @@
           &:after {
             content: "";
             position: absolute;
-            width: 10px;
-            height: 10px;
-            top: 10px;
+            width: 0.625em;
+            height: 0.625em;
+            top: 0.625em;
             background-color: hsl(240, 4%, 80%);
             border-radius: 0 0 0.15em 0.15em;
           }
@@ -122,8 +122,8 @@
     .card-grid {
       .card {
         background-color: variables.$clr-secondary;
-        border: 3px solid variables.$clr-primary;
-        box-shadow: 8px 8px variables.$clr-primary;
+        border: 0.1875em solid variables.$clr-primary;
+        box-shadow: 0.5em 0.5em variables.$clr-primary;
 
         .card-title {
           color: variables.$clr-primary;
@@ -144,8 +144,8 @@
     .email {
       color: variables.$clr-primary;
 
-      border: 3px solid variables.$clr-primary;
-      box-shadow: 6px 6px variables.$clr-primary;
+      border: 0.1875em solid variables.$clr-primary;
+      box-shadow: 0.375em 0.375em variables.$clr-primary;
     }
 
     .contact-form {
