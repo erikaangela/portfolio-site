@@ -219,10 +219,11 @@ nav .hamburger .bar {
 .header-section .title {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
+  text-align: left;
 }
 .header-section .illustration {
+  font-size: 1.125em;
   position: absolute;
-  border: 1px solid black;
   height: 20rem;
   width: 25rem;
   left: 34.375%;
@@ -431,7 +432,7 @@ nav .hamburger .bar {
   border-radius: 50%;
   background-color: hsl(18, 26%, 7%);
   transform: rotate(-45deg);
-  right: 1.5625em;
+  right: 1.625em;
   bottom: 2.75em;
 }
 .header-section .face .hair-right {
@@ -443,7 +444,7 @@ nav .hamburger .bar {
   background-color: hsl(18, 26%, 7%);
   transform: rotate(45deg);
   left: 1.75em;
-  bottom: 2.875em;
+  bottom: 2.8125em;
 }
 .header-section .cup {
   position: absolute;
@@ -553,12 +554,12 @@ nav .hamburger .bar {
   border-radius: 0.1em;
 }
 .header-section .switch .light button {
-  font-size: 16px;
+  font-size: 1em;
   position: absolute;
-  width: 0.625em;
-  height: 1.25em;
-  left: 0.15625em;
-  top: 0.1875em;
+  width: 0.75em;
+  height: 1.35em;
+  left: 0.1em;
+  top: 0.15em;
   background-color: hsl(240, 4%, 30%);
   border: 0;
   border-radius: 0.15em;
@@ -580,6 +581,18 @@ nav .hamburger .bar {
   top: 10px;
   background-color: hsl(240, 4%, 65%);
   border-radius: 0 0 0.15em 0.15em;
+}
+@media (max-width: 768px) {
+  .header-section .illustration {
+    font-size: 1em;
+    right: 0;
+  }
+}
+@media (max-width: 630px) {
+  .header-section .illustration {
+    font-size: 1em;
+    left: -7%;
+  }
 }
 
 .diagonal {
