@@ -321,7 +321,7 @@ nav .hamburger .bar {
   bottom: calc(15% + 0.75em + 1.125em); /* sitting on top of book-two */
   left: 60%;
   z-index: 1;
-  background-color: pink;
+  background-color: hsl(240, 4%, 5%);
   border-radius: 0.05em 0.05em 0.1em 0.1em;
 }
 .header-section .phone .rings {
@@ -455,7 +455,7 @@ nav .hamburger .bar {
   bottom: 15%;
   border-left: 0.4375em solid transparent;
   border-right: 0.4375em solid transparent;
-  border-top: 3em solid #e79898;
+  border-top: 3em solid hsl(90, 9%, 88%);
 }
 .header-section .cup:after {
   content: "";
@@ -473,7 +473,7 @@ nav .hamburger .bar {
   height: 0.4375em;
   right: -0.5625em;
   bottom: 2.6875em;
-  background-color: #e79898;
+  background-color: hsl(90, 9%, 88%);
   border-radius: 1em;
   border-bottom: thin double hsl(28, 18%, 94%);
 }
