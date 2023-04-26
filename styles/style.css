@@ -423,7 +423,7 @@ nav .hamburger .bar {
   border-radius: 10rem 10rem 1rem 1rem;
   box-shadow: 0 -15px 0 10px hsl(18, 26%, 7%);
   left: -0.28125em;
-  bottom: 2.0625em;
+  bottom: 2em;
 }
 .header-section .face .hair-left {
   position: absolute;
