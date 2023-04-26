@@ -427,14 +427,14 @@ nav .hamburger .bar {
 }
 .header-section .face .hair-left {
   position: absolute;
-  width: 3.4375em;
-  height: 1.71875em;
+  width: 4.25em;
+  height: 2.125em;
   border-bottom: thick double hsl(18, 26%, 25%);
-  border-radius: 50%;
+  border-radius: 50% 0 50% 0;
   background-color: hsl(18, 26%, 7%);
-  transform: rotate(-45deg);
+  transform: rotate(-40deg);
   right: 1.625em;
-  bottom: 2.75em;
+  bottom: 2.25em;
 }
 .header-section .face .hair-right {
   position: absolute;
