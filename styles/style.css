@@ -254,11 +254,12 @@ nav .hamburger .bar {
 }
 .header-section .laptop {
   position: absolute;
-  width: 175px;
-  height: 115px;
-  bottom: calc(1em + 15px); /* sitting on top of desk */
+  width: 10em;
+  height: 7em;
+  bottom: 15%; /* to sit on top of desk */
+  left: 20%;
   background-color: hsl(240, 4%, 16%);
-  border-top: 4px solid hsl(217, 45%, 15%);
+  border-top: 0.125em solid hsl(217, 45%, 15%);
   border-radius: 0.5em 0.5em 0 0;
   z-index: 1;
 }
@@ -273,10 +274,11 @@ nav .hamburger .bar {
 }
 .header-section .book-one {
   position: absolute;
-  width: 70px;
-  height: 12px;
-  bottom: calc(1em + 14px); /* sitting on top of desk */
-  left: 350px;
+  width: 4.5em;
+  height: 0.75em;
+  bottom: 15%;
+  left: 55%;
+  z-index: 1;
   border-style: inset;
   border: 2.5px solid hsl(49, 100%, 45%);
   border: 2.5px solid hsl(141, 9%, 68%);
@@ -287,10 +289,11 @@ nav .hamburger .bar {
 }
 .header-section .book-two {
   position: absolute;
-  width: 70px;
-  height: 20px;
-  bottom: calc(1em + 14px + 12px); /* sitting on top of book-one */
-  left: 370px;
+  width: 4.5em;
+  height: 1.125em;
+  bottom: calc(15% + 0.75em); /* sitting on top of book-one */
+  left: 57%;
+  z-index: 1;
   border-style: inset;
   border: 4px solid hsl(201, 75%, 43%);
   border-right: 10px solid hsl(201, 75%, 60%);
@@ -311,25 +314,26 @@ nav .hamburger .bar {
 }
 .header-section .phone {
   position: absolute;
-  width: 50px;
-  height: 6px;
-  bottom: calc(1em + 14px + 12px + 20px); /* sitting on top of book-two */
-  left: 379px;
-  background-color: hsl(240, 4%, 16%);
+  width: 3.25em;
+  height: 0.35em;
+  bottom: calc(15% + 0.75em + 1.125em); /* sitting on top of book-two */
+  left: 59%;
+  z-index: 1;
+  background-color: pink;
   border-radius: 0.05em 0.05em 0.1em 0.1em;
 }
 .header-section .phone .rings {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: -7px;
-  bottom: 7px;
+  width: 1.875em;
+  height: 1.875em;
+  left: -0.4375em;
+  bottom: 0.4375em;
 }
 .header-section .phone .rings .ring {
   position: absolute;
-  width: 3px;
-  height: 12px;
-  top: 12px;
+  width: 0.1875em;
+  height: 0.75em;
+  top: 0.75em;
   border-radius: 1em;
   border: 1px solid hsl(54, 98%, 43%);
   background-color: hsl(54, 98%, 50%);
@@ -337,108 +341,109 @@ nav .hamburger .bar {
   animation: blink 600ms infinite;
 }
 .header-section .phone .rings .ring:nth-of-type(2) {
-  height: 14px;
-  top: 8px;
-  right: 15px;
+  height: 0.875em;
+  top: 0.5em;
+  right: 0.9375em;
   transform: none;
 }
 .header-section .phone .rings .ring:nth-of-type(3) {
-  right: 7px;
+  right: 0.4375em;
   transform: skew(-25deg);
 }
 .header-section .face {
   position: absolute;
-  width: 78px;
-  height: 75px;
-  bottom: 130px;
-  border-radius: 0 0 50px 50px;
+  width: 4.875em;
+  height: 4.6875em;
+  left: 30%;
+  bottom: 9em; /* sitting on top of laptop */
+  border-radius: 0 0 50% 50%;
   border: 6px solid hsl(21, 76%, 82%);
   border-top-style: outset;
   background-color: hsl(22, 93%, 88%);
 }
 .header-section .face .eye {
   position: absolute;
-  width: 12px;
-  height: 12px;
-  bottom: 21px;
-  left: 9px;
+  width: 0.75em;
+  height: 0.75em;
+  bottom: 1.3125em;
+  left: 0.5625em;
   border-radius: 50%;
   background-color: hsl(17, 23%, 26%);
 }
 .header-section .face .eye:nth-child(2) {
   left: auto;
-  right: 9px;
+  right: 0.5625em;
 }
 .header-section .face .nose {
   position: absolute;
-  width: 6px;
-  height: 14px;
-  bottom: 13px;
-  left: 29.5px;
-  border-radius: 20px;
+  width: 0.375em;
+  height: 0.875em;
+  bottom: 0.8125em;
+  left: 1.84375em;
+  border-radius: 1.25em;
   background-color: hsl(24, 70%, 79%);
 }
 .header-section .face .ears {
   position: absolute;
-  width: 110px;
-  height: 30px;
-  left: -22px;
+  width: 6.875em;
+  height: 1.875em;
+  left: -1.375em;
 }
 .header-section .face .ears [class*=ear-] {
   position: absolute;
-  width: 10px;
-  height: 20px;
-  bottom: -10px;
+  width: 0.625em;
+  height: 1.25em;
+  bottom: -0.625em;
   border-radius: 5rem 0 0 5rem;
   background-color: hsl(21, 76%, 82%);
 }
 .header-section .face .ears .ear-left {
-  left: 8px;
+  left: 0.5em;
 }
 .header-section .face .ears .ear-right {
-  right: 8px;
+  right: 0.5em;
   border-radius: 0 5rem 5rem 0;
 }
 .header-section .face .hair {
   position: absolute;
-  width: 95px;
-  height: 60px;
-  left: -14.5px;
+  width: 5.9375em;
+  height: 3.75em;
+  left: -0.90625em;
   border-radius: 5rem 5rem 0 0;
   background-color: #18110e;
   z-index: -3;
 }
 .header-section .face .hair-top {
   position: absolute;
-  width: 75px;
-  height: 40px;
+  width: 4.6875em;
+  height: 2.5em;
   background-color: transparent;
   border-radius: 10rem 10rem 1rem 1rem;
   box-shadow: 0 -15px 0 10px hsl(18, 26%, 7%);
-  left: -4.5px;
-  bottom: 33px;
+  left: -0.28125em;
+  bottom: 2.0625em;
 }
 .header-section .face .hair-left {
   position: absolute;
-  width: 55px;
-  height: 27.5px;
+  width: 3.4375em;
+  height: 1.71875em;
   border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
   background-color: hsl(18, 26%, 7%);
   transform: rotate(-45deg);
-  right: 25px;
-  bottom: 44px;
+  right: 1.5625em;
+  bottom: 2.75em;
 }
 .header-section .face .hair-right {
   position: absolute;
-  width: 55px;
-  height: 27.5px;
+  width: 3.4375em;
+  height: 1.71875em;
   border-bottom: thick double hsl(18, 26%, 25%);
   border-radius: 50%;
   background-color: hsl(18, 26%, 7%);
   transform: rotate(45deg);
-  left: 28px;
-  bottom: 46px;
+  left: 1.75em;
+  bottom: 2.875em;
 }
 .header-section .cup {
   position: absolute;
