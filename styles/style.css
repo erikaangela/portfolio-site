@@ -214,29 +214,35 @@ nav .hamburger .bar {
   text-align: center;
   margin-top: 6.5rem; /* Accomodate for fixed nav */
   margin-bottom: 7rem;
-  padding: 10rem 0;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  position: relative;
+  padding: 1rem 0 16rem 0;
 }
 .header-section .title {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
+.header-section .illustration {
+  position: absolute;
+  border: 1px solid black;
+  height: 20rem;
+  width: 25rem;
+  left: 34.375%;
+}
 .header-section .wall {
-  width: 35%;
+  position: absolute;
+  width: 80%;
   height: 85%;
   border-radius: 10rem 10rem 0 0;
   background-color: hsl(43, 31%, 89%);
-  bottom: 30px;
+  left: 10%;
+  bottom: 10%;
   z-index: -3;
 }
 .header-section .desk {
   position: absolute;
-  width: 35%;
-  height: 12px;
-  bottom: calc(1em + 3px); /* accomodates for change to thinner desk width */
+  width: 85%;
+  height: 5%;
+  left: 7.5%;
+  bottom: 10%;
   background-color: #e2d3cd;
   border-radius: 1em;
 }
@@ -291,34 +297,6 @@ nav .hamburger .bar {
   border-left: 0;
   border-radius: 0 0.5em 0.5em 0;
   background-color: hsl(60, 33%, 96%);
-}
-.header-section .message {
-  position: absolute;
-  width: -moz-max-content;
-  width: max-content;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  font-family: "Roboto Mono", monospace;
-  text-decoration: none;
-  left: 235px;
-  bottom: 100px;
-  transform: rotate(-20deg);
-  color: hsl(217, 45%, 15%);
-}
-.header-section .message:before {
-  content: "";
-  position: absolute;
-  inset: 0 0 0 0;
-  background-color: hsl(276, 33%, 97%);
-  animation: texting 7s steps(10) forwards infinite;
-}
-.header-section .message:after {
-  content: "";
-  position: absolute;
-  inset: 0 0 0 0;
-  width: 0.125em;
-  background-color: hsl(240, 4%, 16%);
-  animation: texting 7s steps(10) forwards infinite;
 }
 @keyframes texting {
   0% {

@@ -4,32 +4,38 @@
   @include abstracts.section-align();
   margin-top: abstracts.$section-margin + 2rem; /* Accomodate for fixed nav */
   margin-bottom: 7rem;
-  padding: 10rem 0;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  position: relative;
+  padding: 1rem 0 16rem 0;
 
   .title {
     font-family: "Playfair Display", serif;
     font-size: 3rem;
   }
 
+  .illustration {
+    position: absolute;
+    border: 1px solid black;
+    height: 20rem;
+    width: 25rem;
+    left: 34.375%;
+  }
+
   .wall {
-    // position: absolute;
-    width: 35%;
+    position: absolute;
+    width: 80%;
     height: 85%;
     border-radius: 10rem 10rem 0 0;
     background-color: hsl(43, 31%, 89%);
-    bottom: 30px;
+    left: 10%;
+    bottom: 10%;
     z-index: -3;
   }
 
   .desk {
     position: absolute;
-    width: 35%;
-    height: 12px;
-    bottom: calc(1em + 3px); /* accomodates for change to thinner desk width */
+    width: 85%;
+    height: 5%;
+    left: 7.5%;
+    bottom: 10%;
     background-color: #e2d3cd;
     border-radius: 1em;
   }
@@ -89,35 +95,6 @@
     border-left: 0;
     border-radius: 0 0.5em 0.5em 0;
     background-color: hsl(60, 33%, 96%);
-  }
-
-  .message {
-    position: absolute;
-    width: max-content;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    font-family: "Roboto Mono", monospace;
-    text-decoration: none;
-    left: 235px;
-    bottom: 100px;
-    transform: rotate(-20deg);
-    color: abstracts.$clr-secondary;
-
-    &:before {
-      content: "";
-      position: absolute;
-      inset: 0 0 0 0;
-      background-color: abstracts.$clr-primary;
-      animation: texting 7s steps(10) forwards infinite;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      inset: 0 0 0 0;
-      width: 0.125em;
-      background-color: abstracts.$clr-text;
-      animation: texting 7s steps(10) forwards infinite;
-    }
   }
 
   @keyframes texting {
@@ -444,11 +421,6 @@
   //   .book-two {
   //     left: 50px;
   //     z-index: 1;
-  //   }
-
-  //   .message {
-  //     left: 15px;
-  //     bottom: 315px;
   //   }
 
   //   .phone {
