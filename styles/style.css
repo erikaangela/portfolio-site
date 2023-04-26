@@ -10,7 +10,7 @@ used in */
 .darkMode {
   background-color: hsl(217, 45%, 15%);
 }
-.darkMode .header-section .title {
+.darkMode .header-section .titles {
   color: hsl(276, 33%, 97%);
 }
 .darkMode .header-section .wall {
@@ -216,10 +216,11 @@ nav .hamburger .bar {
   margin-bottom: 7rem;
   padding: 1rem 0 16rem 0;
 }
-.header-section .title {
-  font-family: "Playfair Display", serif;
-  font-size: 3rem;
+.header-section .titles {
+  font-size: 2rem;
+  letter-spacing: 3px;
   text-align: left;
+  color: hsl(240, 4%, 16%);
 }
 .header-section .illustration {
   font-size: 1.125em;
