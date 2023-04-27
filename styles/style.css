@@ -222,6 +222,9 @@ nav .hamburger .bar {
   text-align: left;
   color: hsl(240, 4%, 16%);
 }
+.header-section .titles :nth-child(1) {
+  margin-bottom: 0.5rem;
+}
 .header-section .illustration {
   font-size: 1.125em;
   position: absolute;
@@ -584,6 +587,11 @@ nav .hamburger .bar {
   border-radius: 0 0 0.15em 0.15em;
 }
 @media (max-width: 768px) {
+  .header-section .titles {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
   .header-section .illustration {
     font-size: 1em;
     right: 0;
